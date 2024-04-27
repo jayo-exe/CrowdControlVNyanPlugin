@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	  <PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<AssemblyName>CrowdControlVNyanPlugin</AssemblyName>
+		<RootNamespace>CrowdControlVNyanPlugin</RootNamespace>
+	  </PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>E:\vNyan\VNyan_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+		  <HintPath>E:\vNyan\VNyan_Data\Managed\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEditor">
+			<HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Resources\PackageManager\ProjectTemplates\libcache\com.unity.template.universal-10.8.0\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsNativeModule">
+			<HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+		  <HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+		  <HintPath>E:\Unity\Editor\2020.3.40f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="VNyanInterface">
+			<HintPath>E:\VNyan\VNyan_Data\Managed\VNyanInterface.dll</HintPath>
+		</Reference>
+		<Reference Include="websocket-sharp">
+		  <HintPath>E:\vNyan\VNyan_Data\Managed\websocket-sharp.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<Target Name="CopyDLL" AfterTargets="Build">
+		<Copy SourceFiles="$(TargetDir)CrowdControlVNyanPlugin.dll" DestinationFolder="$(TargetDir)\..\..\..\..\..\..\..\CrowdControlVNyan\Assets\CrowdControlPlugin\Plugins" OverwriteReadOnlyFiles="true" />
+	</Target>
+
+</Project>
