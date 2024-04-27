@@ -10,7 +10,7 @@ A VNyan Plugin that allows you to connect to an active [Crowd Control](https://c
     3. [Triggers](#triggers)
     4. [Parameters](#parameters)
     5. [Trigger Browser and Trigger History](#trigger-browser-and-trigger-history)
-3. [Example Resources](#special-resources)
+3. [Example Resources](#example-resources)
 4. [Development](#development)
 5. [Special Thanks](#special-thanks)
 
