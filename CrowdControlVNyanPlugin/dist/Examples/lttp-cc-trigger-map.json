@@ -1,0 +1,3393 @@
+{
+    "graphName": "LTTP Trigger Map",
+    "graphIsActive": true,
+    "nodes": [
+        {
+            "id": "364a7de9-3d63-4555-b029-1a7cf9cb5633",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_moneyup"
+                }
+            ],
+            "posX": -266.0,
+            "posY": 202.0,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "21c929c3-35ad-4fd4-a091-e8b2be6ecc45638372160179569695"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "5d07fd1f-c4cd-4d63-9ccf-b308b19fa3a2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveRupees"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -76.0,
+            "posY": 190.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "627aca92-a316-4734-909a-aa832a8176d4638372160321756226"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "589ac715-d19b-4fe1-ba0c-7a6e7f7b45c2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_moneydown"
+                }
+            ],
+            "posX": -268.0,
+            "posY": 49.0,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ebfe8eaf-59c2-4117-ab25-585a6d626344638372160845644733"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "c4dec327-0663-4418-8107-7cd100a7435d",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "TakeRupees"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -79.0,
+            "posY": 37.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "d289f128-b469-4741-812b-9a55d9af9e9f638372160858471135"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "8c9170cf-0e30-4eb7-9f06-1afa76104f3d",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_arrowsdown"
+                }
+            ],
+            "posX": -270.0,
+            "posY": -578.0,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "78692697-29f3-4683-9e91-ecec1f35f960638372161574756374"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "3c9b606d-8ff3-4326-9380-d4b03722b170",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_arrowsup"
+                }
+            ],
+            "posX": -271.0,
+            "posY": -422.0,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "01f62072-bb77-49b9-8532-be69b1b36906638372161601719088"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "f3faead6-9382-4926-9a15-e86670f01382",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_bombsdown"
+                }
+            ],
+            "posX": -270.0,
+            "posY": -276.0,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "f4a42c0a-08d9-4d35-a42a-78cc4fa23e22638372161613681360"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "fd90e375-027b-4af0-b904-d4ea9574c0da",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_bombsup"
+                }
+            ],
+            "posX": -270.0,
+            "posY": -123.00001525878906,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "9f9032d1-b75c-4350-b0da-2c9df36f0116638372161625168424"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "7d405b21-9f8b-4b6d-a494-202d6e919782",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBombs"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -80.0,
+            "posY": -135.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "5df565ca-d45d-430f-9ff6-f5b3d3478a51638372162657824798"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "dc1f788a-8edf-4936-9b3d-cd284911c1d3",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "TakeBombs"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -82.0,
+            "posY": -288.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "c74c606e-ed18-4229-b602-b14caad98482638372162691936331"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "008a6278-817b-422f-ba44-ac9de3ad84b7",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveArrows"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -82.0,
+            "posY": -434.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "b6f1da8e-2c6a-4102-9508-0f015bb97a5b638372162719528482"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "a6bd56a3-ac4e-4b1d-bd7a-4bf404bf5664",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "TakeArrows"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -81.0,
+            "posY": -590.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "8af981c6-ee30-41d2-8b18-b20f3eecbd1f638372162748219302"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "6c8b8dfc-7d0e-44dd-a677-b0bdbd203efe",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_heart"
+                }
+            ],
+            "posX": -272.0,
+            "posY": -725.0,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ce12d924-31d9-417f-829d-6263b75eb9b0638372166164218490"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "1888ca5e-94ab-4ba4-8f5c-34ba987c1fb8",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveHeart"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -81.0,
+            "posY": -737.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "e557f347-51c5-40a4-9a19-9996e6c58e69638372166176853417"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "c84a33a0-9e8a-4a7c-8bdd-97d81d4e4038",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_lgmag"
+                }
+            ],
+            "posX": -272.0,
+            "posY": -1026.66650390625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "2709f23b-940d-4421-8f35-821b943dda82638372166993260214"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "20772986-e059-49f6-846c-23edf919a5af",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_smmag"
+                }
+            ],
+            "posX": -272.0,
+            "posY": -878.3333129882813,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "3253d9b2-b357-43c7-9cdf-e3a6fd390f3e638372167009594723"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "b0a07f42-61ce-4aab-b373-2ab0e6c91967",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveLgMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -81.00004577636719,
+            "posY": -1040.333740234375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "0e40dd15-2c65-4030-b270-0e09f12220cd638372167025220883"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "4b005ddd-2e05-4eb8-8846-468f5362030d",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveSmMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -81.0,
+            "posY": -890.3333129882813,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "b2cc47ef-0619-45c5-a335-5d0808517eab638372167036619451"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "f3df2fb1-4327-44d9-b29a-64ec32fdcd2c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_unhc"
+                }
+            ],
+            "posX": -270.3333740234375,
+            "posY": -1333.33349609375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "c8282e7c-7770-4632-bb7c-330ed6bbf76e638372168517064940"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "76aadde8-fd67-4a75-a28e-62623e3e6995",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_hc"
+                }
+            ],
+            "posX": -273.6666259765625,
+            "posY": -1183.333251953125,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "a8949a65-60fd-4049-a937-5d89e8c0aec7638372168530104133"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "24851b28-8e09-4a60-8347-6274feda8903",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "TakeHeartContainer"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -81.0,
+            "posY": -1345.333251953125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "a6c3a7f9-dc3f-4211-917c-8daa7c375a43638372168542409363"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "e8146919-c7f7-4bc9-a773-b08d8500ec41",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveHearContainer"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -82.66665649414063,
+            "posY": -1195.333251953125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "54088b0e-b5b1-478d-aa3a-95b88aa502b9638372168554398275"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "dfe4d9c2-6003-43de-b416-c404c3ba5c78",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_hp"
+                }
+            ],
+            "posX": 127.99993896484375,
+            "posY": 203.33306884765626,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "b1d2d102-6d21-4065-856d-44b19f86a83e638372169545936641"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "ee0c7a12-6723-4739-8d3d-4fd999f840b1",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveHeartPiece"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 318.9999694824219,
+            "posY": 191.33331298828126,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "d66cfdbb-1654-4e13-bd59-50366d4552b7638372169559476465"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "e8eae4bf-85c3-4232-bebd-c6fe6c8fce00",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_fairy"
+                }
+            ],
+            "posX": 129.66661071777345,
+            "posY": 51.6663818359375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "019b5d31-7e98-4491-bfa9-ac8e241cc052638372170207102833"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "0c21ceea-514f-42c5-95af-075452c23c14",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveFairy"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 320.6666259765625,
+            "posY": 39.6666259765625,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "775798aa-e825-4e07-af02-0d826101db8a638372170223027604"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "f8cfd6e5-7b81-4ea4-8517-0bb423f349cc",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_bpotr"
+                }
+            ],
+            "posX": 132.99993896484376,
+            "posY": -406.66693115234377,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "73564bec-5b73-4640-9dca-4e7744cb8b1e638372171175488360"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "59dcd8c6-51e0-4aaa-b387-488b66ae075e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_gpotr"
+                }
+            ],
+            "posX": 131.33328247070313,
+            "posY": -253.33360290527345,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "c3737259-9fc6-4ff2-93ce-af8554c3866c638372171188302175"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "a4ce21f5-cd5c-4035-adae-b2993142f5fb",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_rpotr"
+                }
+            ],
+            "posX": 131.33326721191407,
+            "posY": -100.00027465820313,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "839e5666-8ce0-4cc7-92de-0b132e6a94ab638372171204608171"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "05ba2b8e-5260-4973-abc8-bc92fae64580",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBluePotion"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 322.33331298828127,
+            "posY": -418.6667175292969,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "216f51bf-29b1-4063-90b9-64d5d3743858638372171218336426"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "6f20727b-b586-47bd-ae02-bb070aef6d2e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveGreenPotion"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 320.6666259765625,
+            "posY": -265.3333435058594,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "370a9e39-ae5e-4551-95d5-452b7ce10d87638372171227860076"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "1f43d3b9-a358-4642-a533-865b2a574dd8",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveRedPotion"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 320.6666259765625,
+            "posY": -112.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "33d47262-7a2a-4d92-bcab-befa53f44b0e638372171237857338"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "600e09a0-98e0-4f5f-aad8-edeb06210351",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBtlGoldBee"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 325.6666259765625,
+            "posY": -880.3333740234375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "8bbe0321-167e-4e2f-a25d-769adb77e06d638372173486381965"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "0fdd07ac-d321-46fb-afd8-87611603318a",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBtlBee"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 325.6666259765625,
+            "posY": -727.0000610351563,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "13835ca1-c9a0-4def-97cc-664a3a9a8757638372173497533333"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "f27026e4-926c-496c-9162-90b2252f68b2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBtlFairy"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 323.9999694824219,
+            "posY": -573.6666870117188,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "1e388c4d-ad5b-4231-90e8-441cc3f92124638372173508857387"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "3ee1f6b5-f2bd-4c91-86b3-d5740699bf45",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_fairyr"
+                }
+            ],
+            "posX": 132.9999237060547,
+            "posY": -561.6669311523438,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "e2902b5d-9149-44a8-8e6f-cce4d3d8c873638372173913061928"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "bb06380c-eef7-42fd-8f85-376ecf9510b9",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_rgbee"
+                }
+            ],
+            "posX": 134.66661071777345,
+            "posY": -713.3335571289063,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "81647635-cc0f-4706-baf6-3438d7cb9d3c638372173925363247"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "ef187e40-b90c-485d-88bf-336b62cb6b53",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_aubee"
+                }
+            ],
+            "posX": 136.33326721191407,
+            "posY": -868.3335571289063,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "f52e6fc2-4aee-4719-b286-698949cd6907638372173936049140"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "50e1a20d-b57c-4b7d-b5c7-a1f019c6864f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "ActivateFlute"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 325.6666259765625,
+            "posY": -1032.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "011f05b9-db4f-4bff-8b1e-d058a3f0ed0e638372175252390883"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "2a5b2818-bd4c-49c3-ae84-276c834dc80b",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "DeactivateFlute"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 325.6665954589844,
+            "posY": -1185.3333740234375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "68499064-c74b-4592-90ff-69b17fd67d93638372175279088975"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "13183f78-f84f-438c-9dc8-a66cacdf08ca",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBugNet"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 325.6665954589844,
+            "posY": -1338.6666259765625,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "3936dca6-6a66-46f9-b951-05fce3c079ab638372175298627077"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "ce540f27-4f66-42b3-bcf0-32631991206e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_duck"
+                }
+            ],
+            "posX": 134.66661071777345,
+            "posY": -1020.000244140625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "0c47e97f-2741-4e8c-b635-84c877ab87f6638372175423139281"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "e078fea2-685c-4368-b353-5742b4dfc3cc",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_unduck"
+                }
+            ],
+            "posX": 132.99993896484376,
+            "posY": -1173.333740234375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "3a2c2238-e97f-4489-843d-d0e0ca082c3a638372175484220346"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "6ae2da09-2dbc-49dd-9ef2-ba877c8ce744",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_bugnet"
+                }
+            ],
+            "posX": 136.33326721191407,
+            "posY": -1326.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "1b0353c0-1548-4558-ba17-e96c2115a20f638372175599645185"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "ae56defb-8154-499d-afeb-9ba2dc37a013",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBlueCane"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 729.0000610351563,
+            "posY": -647.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "99ff1893-e945-4906-ad1a-f7cbd1477d52638372176990645408"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "09eafc7d-ae74-4096-8051-9591867ad6f0",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_bluecane"
+                }
+            ],
+            "posX": 537.9999389648438,
+            "posY": -636.6669311523438,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ac31410c-bad5-47ac-a4e8-a491ebc04e9c638372177029233484"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "a17191ff-b1a1-4cf5-8675-ffca67e44664",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveHalfMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 727.3333740234375,
+            "posY": 117.99993896484375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "dd4bdd58-d845-4908-868e-3d70058f263a638372177175353212"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "f9eb86b0-f0b3-45f1-bc80-1a254f8eb9f7",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveQuarterMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 727.3333740234375,
+            "posY": -37.000091552734378,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "94211937-3a9d-4bd4-9d84-bc05f00ad44e638372177210924890"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "cf6db8aa-fa51-4258-9f90-c36e1c7f760f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_halfmag"
+                }
+            ],
+            "posX": 534.6666259765625,
+            "posY": 133.3330078125,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ffaf81d5-c8b7-43b7-b665-54f61bdbeafc638372177262705024"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "8c4afb15-21b3-481b-9af3-c49b25a265b2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_quartermag"
+                }
+            ],
+            "posX": 541.333251953125,
+            "posY": -26.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "a9db13d3-afeb-4af0-895b-6900ee8e823e638372177290906300"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "e78d2455-d1e6-4afc-858d-84ef01225bb4",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveSilvers"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 729.0,
+            "posY": -197.00010681152345,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "e398bddf-3418-46ce-9e25-4231c0df14f2638372179545829904"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "321577b6-eb30-403f-94e4-64c47cd372f7",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveFullHeal"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 730.6666259765625,
+            "posY": -345.33343505859377,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "9321a72b-6835-41e4-9757-3d49cb835eb2638372179581733665"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "84283c11-a021-41b6-8245-10a65b16baee",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "KillPlayer"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 732.3333740234375,
+            "posY": -495.33343505859377,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "75c9cc58-6c3b-49ce-a6aa-886670df9167638372179619915649"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "bc674957-afb1-4e62-bb81-c90ea1ffd6fa",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_silvers"
+                }
+            ],
+            "posX": 539.6666259765625,
+            "posY": -185.00030517578126,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "8c97c2e1-76c0-4fd3-9c06-bca0989d5353638372179672811069"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "e75057e1-6671-4443-b3fa-047e24399d7a",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_refresh"
+                }
+            ],
+            "posX": 543.0,
+            "posY": -331.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "d966eacb-ba4b-4355-9bc0-45083687390b638372180018037910"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "0363f9a3-4494-43a9-8f11-82df76fdf8a2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_killplayer"
+                }
+            ],
+            "posX": 543.0,
+            "posY": -485.00030517578127,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "6e4de0e6-9b8a-4182-8b2f-e021d7427b9e638372180253557114"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "d79469f3-db9f-4386-a6fa-bb84dc6a8074",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "UpgradeSword"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 327.3332214355469,
+            "posY": -1495.33349609375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "e3eaead1-6a98-46d3-a9a6-e5b4ad80a0ce638372181232381745"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "9a61682d-a55d-4871-84a1-3a0cc84a2064",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "UpgradeShield"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": -79.33343505859375,
+            "posY": -1498.666748046875,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "bbc388c7-45f6-409c-ae7f-ad04f94cc9be638372181246212734"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "9e6659c2-2f7f-49cf-84c8-e3a75e2d6c0c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_swordup"
+                }
+            ],
+            "posX": 137.99981689453126,
+            "posY": -1483.333740234375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "28e1614d-705a-473e-bb11-28f3dd2b78c5638372181469712947"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "11be2fbe-371b-4352-a8f0-199caaa30542",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_esc_shieldup"
+                }
+            ],
+            "posX": -270.33343505859377,
+            "posY": -1486.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "1c00ba27-9387-47c8-b1c1-399f7dc5ad36638372181481571252"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "c7409b4f-d39c-49ab-8b06-b42e923a5914",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_icephys1_begin"
+                }
+            ],
+            "posX": 1074.6668701171875,
+            "posY": -176.6670684814453,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "b1351d21-4539-496d-90ca-06089096a1be638372185528203546"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "7e509b77-b752-4d13-965a-843f6fb64689",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_icephys1_resume"
+                }
+            ],
+            "posX": 1076.3333740234375,
+            "posY": -270.0003967285156,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "fc21cce3-b05b-4ee6-b825-45080411c665638372185541685967"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "9670c639-f443-4de7-8ca6-d257f0b5e0fc",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartIcePhysics"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1294.0001220703125,
+            "posY": -243.666748046875,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "576bdd7a-aebe-4910-a752-5aa0b59427f1638372185554990888"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "8e770923-5161-4402-8d61-1ddd1d3dbfcc",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_icephys1_end"
+                }
+            ],
+            "posX": 1076.3333740234375,
+            "posY": -361.6669616699219,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "c171ba0e-7f54-484c-8ff0-7d8a54f3ad91638372185678513147"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "df843088-dd5f-4413-8212-d25fcde23777",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_icephys1_pause"
+                }
+            ],
+            "posX": 1074.6666259765625,
+            "posY": -453.3335876464844,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "1daefcd2-6e69-4666-94a2-b6b8e94d28bd638372185689551137"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "6826c780-5195-4374-a584-f2148046d910",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopIcePhysics"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1295.666748046875,
+            "posY": -427.0000305175781,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "9b68029d-df19-4ee0-b248-5660f5422b56638372186258232305"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "6f284381-417a-4bd7-9a7f-d51510cdb7e7",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infmag1_begin"
+                }
+            ],
+            "posX": 1076.33349609375,
+            "posY": -1301.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "5be452dd-a4ed-49d3-b11c-12b73be1af6d638372187002100537"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "0bb20158-9f3d-4517-b06c-c4c8b4d60920",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infarrows1_begin"
+                }
+            ],
+            "posX": 1076.33349609375,
+            "posY": -928.333740234375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "63036d2e-9bbb-4e92-baf9-acd4012b060e638372187015647248"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "8033a5f5-1412-4ae9-acbb-36c9e07acd5f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infbombs1_begin"
+                }
+            ],
+            "posX": 1074.6668701171875,
+            "posY": -555.0003662109375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "16e71091-24d3-4863-9c9b-0a0bbe70e56d638372187029620435"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "abe5c5c8-6d50-4877-9817-d71158ec55b8",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infmag1_resume"
+                }
+            ],
+            "posX": 1078.0,
+            "posY": -1391.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "730e60c1-9a54-4320-b977-6b140c033eb7638372187051801043"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "acf49eb6-9edd-4ee4-b10e-47fcadc0a7a1",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infarrows1_resume"
+                }
+            ],
+            "posX": 1076.3333740234375,
+            "posY": -1018.333740234375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "d7938a39-7b67-4a62-9301-6fc2d9b6c848638372187065051036"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "da54f001-2282-4754-91d4-52b5d4566822",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infbombs1_resume"
+                }
+            ],
+            "posX": 1074.6666259765625,
+            "posY": -646.6670532226563,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "e682a771-29dc-424c-a94d-9b4da5c54289638372187078230474"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "477d7eb8-015d-43ef-827b-1d62aa00c19e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infmag1_end"
+                }
+            ],
+            "posX": 1076.3333740234375,
+            "posY": -1480.3336181640625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "fadeb48f-c5fe-4992-846a-c229d10a10ca638372187094347683"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "70d7ff76-0638-4a87-a3aa-b721e717bd5c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infarrows1_end"
+                }
+            ],
+            "posX": 1076.3333740234375,
+            "posY": -1111.6668701171875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "dc0fee31-92e2-4b9f-b3f7-be75ae4b9eb1638372187112345975"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "bca413d5-a6ed-44fe-9ca0-10d0cf6093d5",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infbombs1_end"
+                }
+            ],
+            "posX": 1076.000244140625,
+            "posY": -736.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "c4291477-629e-473f-a426-45f3b3806199638372187126523343"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "eb977ebe-5b26-4cdc-a2ee-ce239512e2c8",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infmag1_pause"
+                }
+            ],
+            "posX": 1076.9998779296875,
+            "posY": -1572.0001220703125,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "8528197a-51d0-462c-8157-f8de49a93b56638372187139892839"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "797ec5d3-f03d-453a-b8ac-58cf28d740be",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infarrows1_pause"
+                }
+            ],
+            "posX": 1076.333251953125,
+            "posY": -1201.666748046875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ed69085a-a289-44de-b550-d5dc4c479282638372187151922016"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "b6464c5b-835e-49e9-9e42-5e2b276c7411",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_infbombs1_pause"
+                }
+            ],
+            "posX": 1076.333251953125,
+            "posY": -826.3336181640625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "e5e09735-0aa5-40ea-bcfd-622a2b9125f4638372187164103533"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "14c22204-4697-4c5f-a3fd-21f66cdd9f83",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartInfBombs"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1285.6668701171875,
+            "posY": -618.6668090820313,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "ed033595-4662-46a5-acef-5bf04f02581a638372189717386218"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "a360e959-b1b1-4e11-8dc7-06fb9ec413c1",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartInfArrows"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1287.6668701171875,
+            "posY": -992.3334350585938,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "b3e9ba62-6db1-4cb5-88ec-e0553f1ec5f3638372189731604546"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "1ff34247-273b-4606-8f83-552a3870c681",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartInfMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1289.0001220703125,
+            "posY": -1364.0001220703125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "abf0e91a-5fde-4345-9167-62d51b199063638372189742005869"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "71c7d442-c3ef-419d-b620-44690a75edd0",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopInfBombs"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1285.666748046875,
+            "posY": -798.6666870117188,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "63c05a7f-8ee0-4efd-958a-308341c8a9f9638372189849160595"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "7abc45e6-3c8c-4964-b7b9-3b146c40a627",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopInfArrows"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1289.333251953125,
+            "posY": -1174.666748046875,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "eb2b809e-909f-49c8-bda0-54f2dc139a64638372189859121932"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "c18f52dd-9012-4a74-a39b-da6cdc36e64e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopInfMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1288.3333740234375,
+            "posY": -1547.0,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "5457ad00-bc27-4d06-9bd5-3cd5ac451030638372189868446772"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "af58b6a4-9f3d-4faa-a144-d4c5c6929ca2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicup1_begin"
+                }
+            ],
+            "posX": 1518.0003662109375,
+            "posY": -558.3336791992188,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "9a2f1e95-3210-4ad8-9b62-e6bae55a411f638372191786516349"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "95a164c9-1465-4c82-8ca2-a43abf393f5a",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armorup1_begin"
+                }
+            ],
+            "posX": 1518.0003662109375,
+            "posY": -166.66709899902345,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "be84ea9a-a365-4a19-9a40-e48cc3cc2598638372191803233554"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "d398ef12-f759-42be-9372-6e74e0dc919c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swordup1_begin"
+                }
+            ],
+            "posX": 1514.6668701171875,
+            "posY": 239.9995574951172,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "0d714c54-fceb-447a-882f-beb1e2206946638372191817875706"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "0ec84233-e82a-44f4-8571-12733ed6391a",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicup1_resume"
+                }
+            ],
+            "posX": 1518.000244140625,
+            "posY": -646.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "d09f3f1f-815f-4dbf-bf19-680296feaf29638372191830689302"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "e33fb0e4-eaa1-4205-b2c5-465e879b0823",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armorup1_resume"
+                }
+            ],
+            "posX": 1519.6668701171875,
+            "posY": -258.3337097167969,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "414a0478-7b37-49c9-ab09-3e198b48d17f638372191843576712"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "e7911b28-672a-430c-95dc-8be24b231a20",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swordup1_resume"
+                }
+            ],
+            "posX": 1516.33349609375,
+            "posY": 149.99960327148438,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "e093aa99-aefb-410a-9bdb-3fae178a4b71638372191855310950"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "def227bf-aeda-4442-abaf-b4e67d9ba8d5",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicup1_end"
+                }
+            ],
+            "posX": 1518.0001220703125,
+            "posY": -735.0003051757813,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "5270cb9c-c087-4e47-a96e-ea730d2bbff5638372191908035452"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "1cc1f720-fbaa-4b90-972c-e2d13933abe3",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armorup1_end"
+                }
+            ],
+            "posX": 1519.6668701171875,
+            "posY": -350.000244140625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "2d3c9754-5130-435d-a4ea-3778c4ddac35638372191919728768"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "f37be249-556d-4cde-a367-969a9dae1514",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swordup1_end"
+                }
+            ],
+            "posX": 1514.666748046875,
+            "posY": 61.66639709472656,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "d45db95c-7bd9-430f-a597-0e527591e6d0638372191930778316"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "73804968-4574-4aae-99ab-ea7001cc052b",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicup1_pause"
+                }
+            ],
+            "posX": 1518.0001220703125,
+            "posY": -823.3336181640625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "56a0c7f0-f4ea-4598-8258-aceb7531dc87638372191942298387"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "b874bc54-f8f2-47ff-8998-098b76ef5df1",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armorup1_pause"
+                }
+            ],
+            "posX": 1518.0,
+            "posY": -441.66693115234377,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "46b6c297-8531-4ef9-94e5-7bc143e35a23638372191954036354"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "638f899d-9d03-45f8-9ab8-15b96cb5b7e2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swordup1_pause"
+                }
+            ],
+            "posX": 1516.3333740234375,
+            "posY": -28.333633422851564,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "a5386979-21f6-4074-b92c-e6803c778e99638372191966641931"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "5fa6f0ca-7d25-44be-8e74-1c30c819b33c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartBuffMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1732.3333740234375,
+            "posY": -617.0000610351563,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "b978fff5-ac51-4929-86b1-b49d782ee497638372192008443404"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "d8b0971f-3de9-43c0-9bc6-4b281d312901",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartBuffArmor"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1732.33349609375,
+            "posY": -230.3333740234375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "15ebad7e-9ba6-41f7-9985-ee77a268d8f2638372192018742703"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "a1319b7f-bf6e-49ef-bdfe-7c9b9df96217",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartBuffSword"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1727.33349609375,
+            "posY": 174.66656494140626,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "2c7edcfe-a2fe-47b7-a512-54848a712b33638372192027878166"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "a425e70b-97c4-4a05-89b6-68b8e1e3d6df",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopBuffMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1727.33349609375,
+            "posY": -798.6666870117188,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "18971329-9d01-4c1c-b053-b44bfdabadb5638372192038910434"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "35d5e4de-beba-4bb2-8fc8-7d377f2c9948",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopBuffArmor"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1732.3336181640625,
+            "posY": -413.6666259765625,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "4f0d52e0-a3a2-4ed6-aff9-308e08b73198638372192052581212"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "bf91b2e2-713c-4f8d-b41d-99c09848ad2f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopBuffSowrd"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1730.6669921875,
+            "posY": -2.00006103515625,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "ef8b4b7b-f1e2-4cdd-855e-d51bc3e8c3df638372192062674085"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "e04b63f9-3a47-4520-b864-eac349011112",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_sworddown1_begin"
+                }
+            ],
+            "posX": 1928.000244140625,
+            "posY": 249.9995574951172,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "5d23a7a7-6a53-44ce-bc87-a12ea505738a638372213529977408"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "209547c8-c4e3-4886-8172-a40440d07dcd",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_sworddown1_resume"
+                }
+            ],
+            "posX": 1929.6668701171875,
+            "posY": 163.33291625976563,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "7df88b60-fe7f-455b-b113-580d93acf30d638372213542796483"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "b9df4267-0aec-4543-8134-20241ad84eba",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_sworddown1_end"
+                }
+            ],
+            "posX": 1931.3333740234375,
+            "posY": 73.33308410644531,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "a1f74bba-2543-49b2-a987-eb208fcc63ff638372213556118788"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "8611958e-77ba-4b6f-a5ab-84dbc4e0999c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_sworddown1_pause"
+                }
+            ],
+            "posX": 1931.3333740234375,
+            "posY": -13.333633422851563,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "7daa74c0-104e-4341-842a-672df131702b638372213569050866"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "43828554-3e7d-4e6b-ac6b-3879a9384dc6",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armordown1_begin"
+                }
+            ],
+            "posX": 1953.00048828125,
+            "posY": -163.33375549316407,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "1b1ecea9-996e-4df9-95fb-b84086900ef0638372213581986849"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "2d581599-f4fd-40f2-a684-710da470f28f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armordown1_resume"
+                }
+            ],
+            "posX": 1953.000244140625,
+            "posY": -253.33370971679688,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "dfd5d37a-d6e0-4bad-818e-16b560522c6c638372213597211469"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "34fd3ad6-6ab1-4751-8b7f-7749dfec1c7c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armordown1_end"
+                }
+            ],
+            "posX": 1954.6669921875,
+            "posY": -343.3335876464844,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "9b17b788-8846-45b1-9ac9-0e4dd917303c638372213609813249"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "aa39d2e6-13e8-4a9d-88ef-68def8e93d1a",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_armordown1_pause"
+                }
+            ],
+            "posX": 1954.6666259765625,
+            "posY": -431.66693115234377,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ee026991-5b38-4b5e-989f-f9cdedd4fc5e638372213628445678"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "49ff659e-137d-4a19-afa9-06c7c47281fd",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicdown1_begin"
+                }
+            ],
+            "posX": 1954.6671142578125,
+            "posY": -545.0003662109375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "3b002eda-ce71-45d5-b11a-af1e87b9f46e638372213683005611"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "27ba3cc4-120e-4cfc-bb81-e1ae9716b558",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicdown1_resume"
+                }
+            ],
+            "posX": 1954.6668701171875,
+            "posY": -636.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "206c90f3-7208-4c18-855d-cc9f147791f3638372213698865855"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "5837a316-612d-4304-9037-d4fe76de1ec8",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicdown1_end"
+                }
+            ],
+            "posX": 1953.0001220703125,
+            "posY": -728.3336791992188,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "02864a0d-4977-405c-96a7-51259deb1878638372213710887109"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "20c25f24-09a4-412a-828a-71938f75ceed",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_magicdown1_pause"
+                }
+            ],
+            "posX": 1953.0001220703125,
+            "posY": -816.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "31dda549-9e81-47ea-b353-7a69968caeb3638372213725265447"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "19c7a680-4a21-4109-a0a2-273b43c54e0c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartDebuffSword"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2142.33349609375,
+            "posY": 192.9998779296875,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "6f28b867-00ce-46b9-8b3c-8d1e0f1044c2638372213743298397"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "b1989c1d-6e9a-45c2-a1bf-91a0fe9dbed4",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopDebuffSword"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2144.00048828125,
+            "posY": 11.333251953125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "2d221f1f-d675-42d0-9c6b-06b70d170784638372213760245164"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "6ccdf8b6-f5c9-4b46-b22b-7a4679141da5",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartDebuffArmor"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2164.000244140625,
+            "posY": -222.00006103515626,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "4d57b3fd-a0a6-4259-a2bb-0d1df3de7f7f638372213774726338"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "414e41a9-baf6-48aa-8956-858acf21e530",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopDebuffArmor"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2165.667236328125,
+            "posY": -403.6666259765625,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "d12f6a19-222f-4fb6-a98b-0bc4755b254c638372213788354868"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "7baad56d-b43e-4c1f-a4c3-189078830794",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartDebuffMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2165.6669921875,
+            "posY": -610.3333740234375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "eac0e649-026b-4e08-8edd-d803601a7b48638372213801317250"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "a214dc54-d4fc-485b-a8ea-51ac8f762920",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopDebuffMagic"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2165.6669921875,
+            "posY": -788.6666870117188,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "6b5e872f-d13b-4a92-bd29-d0351ce5b33d638372213813611930"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "907ee1fb-e485-45a0-981f-a5d8f2398438",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertboth1_begin"
+                }
+            ],
+            "posX": 1953.000244140625,
+            "posY": -931.6670532226563,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "eb39eb04-827b-49ef-b791-db3c26877f04638372219948437788"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "1f8c06a9-48b4-4e27-8eca-38e4e536feb3",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertbuttons1_begin"
+                }
+            ],
+            "posX": 1518.000244140625,
+            "posY": -930.0004272460938,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "97a29600-5ad4-4bde-a2ad-798fabed446f638372219963664470"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "0c3d6068-42c8-40d0-a413-8f98c3012760",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertboth1_resume"
+                }
+            ],
+            "posX": 1953.0001220703125,
+            "posY": -1020.0003662109375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "86c510aa-80d4-4e26-a2c5-3ea33b860b63638372219979869962"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "db22ae01-10ab-43ca-9c8a-6fe2bda4d67f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertbuttons1_resume"
+                }
+            ],
+            "posX": 1518.0001220703125,
+            "posY": -1020.0004272460938,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "266c3ff5-f7e0-4659-b09b-67abade27a5f638372219992686754"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "90b52539-e6ce-4f52-944c-12b45eba16e6",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertboth1_end"
+                }
+            ],
+            "posX": 1953.0001220703125,
+            "posY": -1110.000244140625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "4e77b71e-1002-4c86-93a1-74ebdf503ce7638372220005647975"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "8f1ba1cc-b616-4244-b27d-90aa659d2ef3",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertbuttons1_end"
+                }
+            ],
+            "posX": 1518.0001220703125,
+            "posY": -1106.6668701171875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "d112899c-4030-434a-9def-4e9977147df4638372220018324156"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "06186442-5f39-4bb3-aa52-674bc3f39dcc",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertboth1_pause"
+                }
+            ],
+            "posX": 1954.666748046875,
+            "posY": -1200.0,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "e8c83bb1-54f1-459f-8896-e95dc8161e35638372220031955607"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "c6cccde6-8a99-4584-a04d-fd53664c07c0",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertbuttons1_pause"
+                }
+            ],
+            "posX": 1519.6666259765625,
+            "posY": -1195.0001220703125,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "23ef0eaf-ddfc-4aea-a1ee-666a256be431638372220044911443"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "8dd81541-dd49-47b4-9272-f3cf5509de52",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swap1_begin"
+                }
+            ],
+            "posX": 1954.6668701171875,
+            "posY": -1308.333740234375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "3a153788-d6b4-4d1f-9b93-6961467dc206638372220071318019"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "384ce182-4162-4992-8d67-fecbf35e3772",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertdpad1_begin"
+                }
+            ],
+            "posX": 1519.6668701171875,
+            "posY": -1300.000244140625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "9624ea19-e6ec-44d5-aa68-4d8c788033bf638372220085240701"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "b1b8d43f-20a9-436a-8d0f-6db73b4a6f52",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swap1_resume"
+                }
+            ],
+            "posX": 1956.3333740234375,
+            "posY": -1398.3336181640625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "c05c2225-6602-4b4e-9572-7cd510e72a06638372220097805581"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "80c796e4-a8ca-4e77-beb5-4f1d8ba34dd9",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertdpad1_resume"
+                }
+            ],
+            "posX": 1519.666748046875,
+            "posY": -1388.333740234375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "1c04b632-83e7-4ee7-aa91-c532b659bba2638372220108447181"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "c7c57ec1-0dc7-4b36-8af2-c1831f9d50c0",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swap1_end"
+                }
+            ],
+            "posX": 1958.0001220703125,
+            "posY": -1485.3336181640625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "9258e691-feea-4cbf-b29d-b301e7ee695f638372220123780770"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "fd4a407c-0515-405d-ad54-01661c30a01f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertdpad1_end"
+                }
+            ],
+            "posX": 1519.666748046875,
+            "posY": -1475.3336181640625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "8a359c7b-1075-447e-9e4c-5857e86344a9638372220138862625"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "36b52b55-752e-4dff-a581-e33d041f949a",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_swap1_pause"
+                }
+            ],
+            "posX": 1958.6666259765625,
+            "posY": -1573.666748046875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "e2e7d470-6813-4f3e-b449-62f45ec3a6bc638372220150385938"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "406af8a5-91b8-4be6-a773-670f0db2192e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_invertdpad1_pause"
+                }
+            ],
+            "posX": 1518.6666259765625,
+            "posY": -1562.0001220703125,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "535636e1-975a-4c8e-8eb7-8f234b601757638372220166696535"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "fd810ef9-b1d2-41d4-a73a-015e159e1d8c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartInvBoth"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2172.6669921875,
+            "posY": -1004.0001220703125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "39c0eb81-3ea3-441d-ba50-0f332b9e39c3638372220188614248"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "0388be72-1230-4869-b1a8-e3913e0eabce",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartInvButtons"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1727.6668701171875,
+            "posY": -992.3334350585938,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "ded917a1-87b2-4cc7-80c6-e31f2a25c915638372220200086335"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "6c7f62f9-d556-4ea1-b09b-a850daf1aa38",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopInvBoth"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2172.666748046875,
+            "posY": -1179.666748046875,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "33ab8514-d28f-49cc-92cb-5e15df2fff08638372220212440763"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "e4ccbb26-82bb-4ea2-85a2-d41bd3e82647",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopInvButtons"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1732.6666259765625,
+            "posY": -1169.6668701171875,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "5ecf5e35-2ee1-4b40-b09c-c4caca6bc29b638372220222862590"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "58f4dd79-d135-4315-8577-278a73c1f33d",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartSwapControls"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2179.000244140625,
+            "posY": -1362.33349609375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "24b0e4cd-8ce8-4ad4-8d69-168fdf8b8b3c638372220236383156"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "a1aee21c-c111-463e-b458-4e7e8f52674c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartInvDPad"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1730.6668701171875,
+            "posY": -1359.0001220703125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "2013cd8e-2270-4273-a02a-a4b51618ae1e638372220248403046"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "974c42c1-4d9d-4ded-8c08-5f6bd808d045",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopSwapControls"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 2183.33349609375,
+            "posY": -1553.6666259765625,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "9f72bcce-98c7-4225-ae83-aab3dc1db312638372220261555875"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "49414493-a154-43d0-9cea-ae186c8842c5",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopInvDPad"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1730.0001220703125,
+            "posY": -1535.3333740234375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "9fdd8fbe-1b5b-448e-ad66-6dd1bf3056a1638372220272263442"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "a3fabba6-1f60-459d-962c-d41ee84259f1",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_ohko1_begin"
+                }
+            ],
+            "posX": 1074.6669921875,
+            "posY": 223.33282470703126,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "78ce66b1-33f0-4393-b6a6-f59dff1b1b59638372227230056893"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "8eb2d4a4-b4e8-4ce1-a4e0-f428fdcb704e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_ohko1_resume"
+                }
+            ],
+            "posX": 1076.33349609375,
+            "posY": 133.33282470703126,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "4f8b4b8d-76a9-4845-9304-7da21b677bb5638372227263866807"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "7e9d1169-1562-4535-9060-8b97a351e72d",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_ohko1_end"
+                }
+            ],
+            "posX": 1076.33349609375,
+            "posY": 24.9996337890625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ea3cb520-ec1b-428f-b06e-ae08da432117638372227277836296"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "9ffd2830-229a-4c7b-ac6e-16292131610a",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_ohko1_pause"
+                }
+            ],
+            "posX": 1076.3333740234375,
+            "posY": -65.00006103515625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "258fcf28-2e05-4603-b89b-064c5d3d8c5d638372227290644680"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "0a5395e4-e3e2-43b4-acb0-5a856bfe6c74",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_cucco1_begin"
+                }
+            ],
+            "posX": 618.0001831054688,
+            "posY": -1290.0003662109375,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "dcec94df-94c5-4214-a9a4-46b999dba91f638372227305619705"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "85af019c-5aaa-44ba-9e58-cf02f07fb5d2",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_cucco1_resume"
+                }
+            ],
+            "posX": 618.0000610351563,
+            "posY": -1376.6669921875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "a0c3d865-0483-4778-9284-9313e5f11368638372227319721918"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "7f3595fc-0a20-46d5-9f8c-6073d24ee02b",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_cucco1_end"
+                }
+            ],
+            "posX": 616.3334350585938,
+            "posY": -1462.000244140625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "b36114c3-22cb-410c-9d56-9c35aa5f3cc9638372227334198052"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "4a0c22b3-cb00-498e-9955-2b3195a89480",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "_xcc_teu_cucco1_pause"
+                }
+            ],
+            "posX": 616.9999389648438,
+            "posY": -1542.0001220703125,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "1b74c628-1940-44f6-9f32-8937c7f61959638372227347200106"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "a649a015-20e4-44a4-b4da-88e04dc3f58e",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartOHKO"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1287.6668701171875,
+            "posY": 160.9998779296875,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "80343805-8466-40d4-92e1-0c9da07c4216638372227381877142"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "5f5fe137-6edb-4a47-96b0-3eb12b864467",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopOHKO"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 1282.666748046875,
+            "posY": -34.66680908203125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "3547dbb5-f54f-4115-8dab-fc8c062453af638372227395059506"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "d01d07ed-6874-4a6c-982d-e82d83ea99b3",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartCuccos"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 830.6668701171875,
+            "posY": -1344.0001220703125,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "cb5c1710-71bb-425e-86dc-54d23237d44e638372227407180776"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "3d1bf24f-401e-429d-b312-d5c7effc11c7",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopCuccos"
+                },
+                {
+                    "key": "callTime",
+                    "value": "1"
+                }
+            ],
+            "posX": 830.0000610351563,
+            "posY": -1515.3333740234375,
+            "path": "Nodes/CallTriggerNode",
+            "inputSocketIds": [
+                "b02be031-2fe0-4c59-8631-98f3f619b887638372227418423154"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "5bb323c4-5453-4be0-907a-0ca130a283a9",
+            "values": [
+                {
+                    "key": "message",
+                    "value": "This graph maps the Crowd Control Pluigin's semantic Trigger Names for the available effects in \"The Legend of Zelda: A Link To The Past\" to more friendly Trigger Names that are easier to remember and work with in your own Node Graphs.\n\nWhile not strictly necessary for the plugin to function, this serves as a great starting point and provides a solid reference for the effects of this specific game.\n\nFor \"instant\" effects, each \"effect-success\" trigger is directly mapped to another Tigger with a better name.  \"Timed\" effects are wired differently: for each of those effects, the corresponding \"begin\" and \"resume\" triggers are tied to one Start<effect> trigger, and \"end\" and \"pause\" are tied to a similarly-named Stop<effect> trigger."
+                }
+            ],
+            "posX": 725.1626586914063,
+            "posY": -982.6673583984375,
+            "path": "Nodes/MessageBoxNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [],
+            "headerColor": 2
+        }
+    ],
+    "connections": [
+        {
+            "id": "01a9994d-2aad-4bfc-8e95-bb5b093fe1ba",
+            "outputSocketId": "21c929c3-35ad-4fd4-a091-e8b2be6ecc45638372160179569695",
+            "inputSocketId": "627aca92-a316-4734-909a-aa832a8176d4638372160321756226"
+        },
+        {
+            "id": "0b57dcc0-6514-4599-8b09-e3474039b304",
+            "outputSocketId": "ebfe8eaf-59c2-4117-ab25-585a6d626344638372160845644733",
+            "inputSocketId": "d289f128-b469-4741-812b-9a55d9af9e9f638372160858471135"
+        },
+        {
+            "id": "48fcdc87-70a3-448d-805e-9bf3c7539edb",
+            "outputSocketId": "9f9032d1-b75c-4350-b0da-2c9df36f0116638372161625168424",
+            "inputSocketId": "5df565ca-d45d-430f-9ff6-f5b3d3478a51638372162657824798"
+        },
+        {
+            "id": "411fda35-9f40-49aa-8e1a-40e3c1335bb0",
+            "outputSocketId": "f4a42c0a-08d9-4d35-a42a-78cc4fa23e22638372161613681360",
+            "inputSocketId": "c74c606e-ed18-4229-b602-b14caad98482638372162691936331"
+        },
+        {
+            "id": "569003ad-578c-4c87-adc5-7b61783d059d",
+            "outputSocketId": "01f62072-bb77-49b9-8532-be69b1b36906638372161601719088",
+            "inputSocketId": "b6f1da8e-2c6a-4102-9508-0f015bb97a5b638372162719528482"
+        },
+        {
+            "id": "94a10ead-45c6-46ea-884c-2a88536b1e6b",
+            "outputSocketId": "78692697-29f3-4683-9e91-ecec1f35f960638372161574756374",
+            "inputSocketId": "8af981c6-ee30-41d2-8b18-b20f3eecbd1f638372162748219302"
+        },
+        {
+            "id": "fe3eb5bd-a4a3-4123-8179-d90f90e4c967",
+            "outputSocketId": "ce12d924-31d9-417f-829d-6263b75eb9b0638372166164218490",
+            "inputSocketId": "e557f347-51c5-40a4-9a19-9996e6c58e69638372166176853417"
+        },
+        {
+            "id": "09a8dd78-4029-4657-8bd2-e6040ee255a3",
+            "outputSocketId": "3253d9b2-b357-43c7-9cdf-e3a6fd390f3e638372167009594723",
+            "inputSocketId": "b2cc47ef-0619-45c5-a335-5d0808517eab638372167036619451"
+        },
+        {
+            "id": "ac43eecd-bff4-4be3-935b-42f41d90e13e",
+            "outputSocketId": "2709f23b-940d-4421-8f35-821b943dda82638372166993260214",
+            "inputSocketId": "0e40dd15-2c65-4030-b270-0e09f12220cd638372167025220883"
+        },
+        {
+            "id": "fdd7bff5-b3d9-42e9-af0a-99575f179fac",
+            "outputSocketId": "a8949a65-60fd-4049-a937-5d89e8c0aec7638372168530104133",
+            "inputSocketId": "54088b0e-b5b1-478d-aa3a-95b88aa502b9638372168554398275"
+        },
+        {
+            "id": "0b85634d-a9c1-43b3-9169-f8fd1715400c",
+            "outputSocketId": "c8282e7c-7770-4632-bb7c-330ed6bbf76e638372168517064940",
+            "inputSocketId": "a6c3a7f9-dc3f-4211-917c-8daa7c375a43638372168542409363"
+        },
+        {
+            "id": "2ce522f5-c587-4db2-bac3-dc8f63768c0b",
+            "outputSocketId": "b1d2d102-6d21-4065-856d-44b19f86a83e638372169545936641",
+            "inputSocketId": "d66cfdbb-1654-4e13-bd59-50366d4552b7638372169559476465"
+        },
+        {
+            "id": "ff5cd20e-b1f6-4033-91ea-5a4d6531b034",
+            "outputSocketId": "019b5d31-7e98-4491-bfa9-ac8e241cc052638372170207102833",
+            "inputSocketId": "775798aa-e825-4e07-af02-0d826101db8a638372170223027604"
+        },
+        {
+            "id": "642365b7-e803-4e2a-b1bf-4fe8038b0e64",
+            "outputSocketId": "839e5666-8ce0-4cc7-92de-0b132e6a94ab638372171204608171",
+            "inputSocketId": "33d47262-7a2a-4d92-bcab-befa53f44b0e638372171237857338"
+        },
+        {
+            "id": "2c27b6fa-3c54-4985-bdc2-8fd5ba2e2a42",
+            "outputSocketId": "c3737259-9fc6-4ff2-93ce-af8554c3866c638372171188302175",
+            "inputSocketId": "370a9e39-ae5e-4551-95d5-452b7ce10d87638372171227860076"
+        },
+        {
+            "id": "44a77ae8-fa74-478b-a79d-525eb561e0c3",
+            "outputSocketId": "73564bec-5b73-4640-9dca-4e7744cb8b1e638372171175488360",
+            "inputSocketId": "216f51bf-29b1-4063-90b9-64d5d3743858638372171218336426"
+        },
+        {
+            "id": "3303e43c-737e-4729-b4f6-d716825f9361",
+            "outputSocketId": "e2902b5d-9149-44a8-8e6f-cce4d3d8c873638372173913061928",
+            "inputSocketId": "1e388c4d-ad5b-4231-90e8-441cc3f92124638372173508857387"
+        },
+        {
+            "id": "6a9c20ff-3f56-46ba-8a1e-2d0c479ee7a4",
+            "outputSocketId": "81647635-cc0f-4706-baf6-3438d7cb9d3c638372173925363247",
+            "inputSocketId": "13835ca1-c9a0-4def-97cc-664a3a9a8757638372173497533333"
+        },
+        {
+            "id": "eb4e72ce-1158-4ea8-b9f7-d3dbb0b3e2bc",
+            "outputSocketId": "f52e6fc2-4aee-4719-b286-698949cd6907638372173936049140",
+            "inputSocketId": "8bbe0321-167e-4e2f-a25d-769adb77e06d638372173486381965"
+        },
+        {
+            "id": "44491b12-d698-464d-b62e-30d8289964b9",
+            "outputSocketId": "0c47e97f-2741-4e8c-b635-84c877ab87f6638372175423139281",
+            "inputSocketId": "011f05b9-db4f-4bff-8b1e-d058a3f0ed0e638372175252390883"
+        },
+        {
+            "id": "03dd5070-c631-422e-ac3c-db14a8eda33c",
+            "outputSocketId": "3a2c2238-e97f-4489-843d-d0e0ca082c3a638372175484220346",
+            "inputSocketId": "68499064-c74b-4592-90ff-69b17fd67d93638372175279088975"
+        },
+        {
+            "id": "5d078eef-6e29-46f8-9cf3-609a1c7820b8",
+            "outputSocketId": "1b0353c0-1548-4558-ba17-e96c2115a20f638372175599645185",
+            "inputSocketId": "3936dca6-6a66-46f9-b951-05fce3c079ab638372175298627077"
+        },
+        {
+            "id": "4c7c61fd-9a21-4588-9bdd-997a32adc783",
+            "outputSocketId": "ac31410c-bad5-47ac-a4e8-a491ebc04e9c638372177029233484",
+            "inputSocketId": "99ff1893-e945-4906-ad1a-f7cbd1477d52638372176990645408"
+        },
+        {
+            "id": "aaceb7f6-9047-465d-b422-81228061bea0",
+            "outputSocketId": "ffaf81d5-c8b7-43b7-b665-54f61bdbeafc638372177262705024",
+            "inputSocketId": "dd4bdd58-d845-4908-868e-3d70058f263a638372177175353212"
+        },
+        {
+            "id": "3c22c6f2-e9fe-4a6c-835b-e44988c119f4",
+            "outputSocketId": "a9db13d3-afeb-4af0-895b-6900ee8e823e638372177290906300",
+            "inputSocketId": "94211937-3a9d-4bd4-9d84-bc05f00ad44e638372177210924890"
+        },
+        {
+            "id": "ac042459-b204-4a5c-a61b-27f5f8aac8cf",
+            "outputSocketId": "8c97c2e1-76c0-4fd3-9c06-bca0989d5353638372179672811069",
+            "inputSocketId": "e398bddf-3418-46ce-9e25-4231c0df14f2638372179545829904"
+        },
+        {
+            "id": "fb6ab8e9-2030-4956-bda0-501549e99d63",
+            "outputSocketId": "d966eacb-ba4b-4355-9bc0-45083687390b638372180018037910",
+            "inputSocketId": "9321a72b-6835-41e4-9757-3d49cb835eb2638372179581733665"
+        },
+        {
+            "id": "ea7f2a64-2302-4876-9f58-bb0a0480c88e",
+            "outputSocketId": "6e4de0e6-9b8a-4182-8b2f-e021d7427b9e638372180253557114",
+            "inputSocketId": "75c9cc58-6c3b-49ce-a6aa-886670df9167638372179619915649"
+        },
+        {
+            "id": "5fdef281-bae7-44b4-88ca-485ba957acf9",
+            "outputSocketId": "1c00ba27-9387-47c8-b1c1-399f7dc5ad36638372181481571252",
+            "inputSocketId": "bbc388c7-45f6-409c-ae7f-ad04f94cc9be638372181246212734"
+        },
+        {
+            "id": "2b25672b-b0c4-4b56-81e4-fb5e79dc283d",
+            "outputSocketId": "28e1614d-705a-473e-bb11-28f3dd2b78c5638372181469712947",
+            "inputSocketId": "e3eaead1-6a98-46d3-a9a6-e5b4ad80a0ce638372181232381745"
+        },
+        {
+            "id": "dcfa40e4-6d7a-4826-af03-d126d7f8987d",
+            "outputSocketId": "b1351d21-4539-496d-90ca-06089096a1be638372185528203546",
+            "inputSocketId": "576bdd7a-aebe-4910-a752-5aa0b59427f1638372185554990888"
+        },
+        {
+            "id": "81038fe6-7e3d-4a7b-b642-9d9995209e13",
+            "outputSocketId": "fc21cce3-b05b-4ee6-b825-45080411c665638372185541685967",
+            "inputSocketId": "576bdd7a-aebe-4910-a752-5aa0b59427f1638372185554990888"
+        },
+        {
+            "id": "803809f3-d11b-44c1-b9e4-7512c07fb8a3",
+            "outputSocketId": "c171ba0e-7f54-484c-8ff0-7d8a54f3ad91638372185678513147",
+            "inputSocketId": "9b68029d-df19-4ee0-b248-5660f5422b56638372186258232305"
+        },
+        {
+            "id": "f6613795-f876-45e9-a1bf-207c5e3f0326",
+            "outputSocketId": "1daefcd2-6e69-4666-94a2-b6b8e94d28bd638372185689551137",
+            "inputSocketId": "9b68029d-df19-4ee0-b248-5660f5422b56638372186258232305"
+        },
+        {
+            "id": "cca2e99c-d977-40ff-95a9-57af0ecc12bf",
+            "outputSocketId": "16e71091-24d3-4863-9c9b-0a0bbe70e56d638372187029620435",
+            "inputSocketId": "ed033595-4662-46a5-acef-5bf04f02581a638372189717386218"
+        },
+        {
+            "id": "5caefe03-9dc9-4e65-90d2-063346ff0d6d",
+            "outputSocketId": "e682a771-29dc-424c-a94d-9b4da5c54289638372187078230474",
+            "inputSocketId": "ed033595-4662-46a5-acef-5bf04f02581a638372189717386218"
+        },
+        {
+            "id": "f7daa9e1-b023-4f6e-a447-9d6a486140e4",
+            "outputSocketId": "c4291477-629e-473f-a426-45f3b3806199638372187126523343",
+            "inputSocketId": "63c05a7f-8ee0-4efd-958a-308341c8a9f9638372189849160595"
+        },
+        {
+            "id": "789908a1-b9cf-4e2a-a3cc-62b2c31443d5",
+            "outputSocketId": "e5e09735-0aa5-40ea-bcfd-622a2b9125f4638372187164103533",
+            "inputSocketId": "63c05a7f-8ee0-4efd-958a-308341c8a9f9638372189849160595"
+        },
+        {
+            "id": "e52ff1be-8dc4-45be-b9db-2162b5e4b134",
+            "outputSocketId": "63036d2e-9bbb-4e92-baf9-acd4012b060e638372187015647248",
+            "inputSocketId": "b3e9ba62-6db1-4cb5-88ec-e0553f1ec5f3638372189731604546"
+        },
+        {
+            "id": "a8343d01-f49a-4d95-84d2-10aa5194c912",
+            "outputSocketId": "d7938a39-7b67-4a62-9301-6fc2d9b6c848638372187065051036",
+            "inputSocketId": "b3e9ba62-6db1-4cb5-88ec-e0553f1ec5f3638372189731604546"
+        },
+        {
+            "id": "e905ab96-f367-46e2-8180-a1a27e8f34a9",
+            "outputSocketId": "dc0fee31-92e2-4b9f-b3f7-be75ae4b9eb1638372187112345975",
+            "inputSocketId": "eb2b809e-909f-49c8-bda0-54f2dc139a64638372189859121932"
+        },
+        {
+            "id": "7478ed11-013e-430c-808b-4e7f8f56080e",
+            "outputSocketId": "ed69085a-a289-44de-b550-d5dc4c479282638372187151922016",
+            "inputSocketId": "eb2b809e-909f-49c8-bda0-54f2dc139a64638372189859121932"
+        },
+        {
+            "id": "c5342c4a-75f2-4c31-b81a-a7d4a2308805",
+            "outputSocketId": "5be452dd-a4ed-49d3-b11c-12b73be1af6d638372187002100537",
+            "inputSocketId": "abf0e91a-5fde-4345-9167-62d51b199063638372189742005869"
+        },
+        {
+            "id": "b4b00879-4dc4-48d8-b840-3d95a87fa586",
+            "outputSocketId": "730e60c1-9a54-4320-b977-6b140c033eb7638372187051801043",
+            "inputSocketId": "abf0e91a-5fde-4345-9167-62d51b199063638372189742005869"
+        },
+        {
+            "id": "197c26b3-503d-4da6-8845-f0dd44afe86b",
+            "outputSocketId": "fadeb48f-c5fe-4992-846a-c229d10a10ca638372187094347683",
+            "inputSocketId": "5457ad00-bc27-4d06-9bd5-3cd5ac451030638372189868446772"
+        },
+        {
+            "id": "08cccdf8-8109-412d-bfa4-7f10f357d31d",
+            "outputSocketId": "8528197a-51d0-462c-8157-f8de49a93b56638372187139892839",
+            "inputSocketId": "5457ad00-bc27-4d06-9bd5-3cd5ac451030638372189868446772"
+        },
+        {
+            "id": "50aa85fc-6f75-4f04-be19-44090334e494",
+            "outputSocketId": "0d714c54-fceb-447a-882f-beb1e2206946638372191817875706",
+            "inputSocketId": "2c7edcfe-a2fe-47b7-a512-54848a712b33638372192027878166"
+        },
+        {
+            "id": "33e53753-6857-47cd-8137-d3a57836ccd2",
+            "outputSocketId": "e093aa99-aefb-410a-9bdb-3fae178a4b71638372191855310950",
+            "inputSocketId": "2c7edcfe-a2fe-47b7-a512-54848a712b33638372192027878166"
+        },
+        {
+            "id": "fffb0e4b-059e-40dc-908d-9fae398df3f3",
+            "outputSocketId": "d45db95c-7bd9-430f-a597-0e527591e6d0638372191930778316",
+            "inputSocketId": "ef8b4b7b-f1e2-4cdd-855e-d51bc3e8c3df638372192062674085"
+        },
+        {
+            "id": "e075093c-7c49-4b3d-a522-00cc03f2dc41",
+            "outputSocketId": "a5386979-21f6-4074-b92c-e6803c778e99638372191966641931",
+            "inputSocketId": "ef8b4b7b-f1e2-4cdd-855e-d51bc3e8c3df638372192062674085"
+        },
+        {
+            "id": "d3d073c3-2008-48a0-98e0-17beb5cb917d",
+            "outputSocketId": "be84ea9a-a365-4a19-9a40-e48cc3cc2598638372191803233554",
+            "inputSocketId": "15ebad7e-9ba6-41f7-9985-ee77a268d8f2638372192018742703"
+        },
+        {
+            "id": "8de1508f-cf3a-4d9f-b441-158862d6471e",
+            "outputSocketId": "414a0478-7b37-49c9-ab09-3e198b48d17f638372191843576712",
+            "inputSocketId": "15ebad7e-9ba6-41f7-9985-ee77a268d8f2638372192018742703"
+        },
+        {
+            "id": "33cf4e2f-5876-41f1-aab4-2837cda8c6b1",
+            "outputSocketId": "2d3c9754-5130-435d-a4ea-3778c4ddac35638372191919728768",
+            "inputSocketId": "4f0d52e0-a3a2-4ed6-aff9-308e08b73198638372192052581212"
+        },
+        {
+            "id": "51e7be80-f30c-47ed-9f21-fe0965a636df",
+            "outputSocketId": "46b6c297-8531-4ef9-94e5-7bc143e35a23638372191954036354",
+            "inputSocketId": "4f0d52e0-a3a2-4ed6-aff9-308e08b73198638372192052581212"
+        },
+        {
+            "id": "5a7ce485-c5e5-45ca-880c-439d0456924e",
+            "outputSocketId": "9a2f1e95-3210-4ad8-9b62-e6bae55a411f638372191786516349",
+            "inputSocketId": "b978fff5-ac51-4929-86b1-b49d782ee497638372192008443404"
+        },
+        {
+            "id": "c3150614-352f-4dbe-8e40-219cb8d2cfdd",
+            "outputSocketId": "d09f3f1f-815f-4dbf-bf19-680296feaf29638372191830689302",
+            "inputSocketId": "b978fff5-ac51-4929-86b1-b49d782ee497638372192008443404"
+        },
+        {
+            "id": "5b24a783-8377-4b34-8960-d61c52c6a507",
+            "outputSocketId": "5270cb9c-c087-4e47-a96e-ea730d2bbff5638372191908035452",
+            "inputSocketId": "18971329-9d01-4c1c-b053-b44bfdabadb5638372192038910434"
+        },
+        {
+            "id": "6e49c0cc-bf4a-42bb-8ed9-4d70933ba10e",
+            "outputSocketId": "56a0c7f0-f4ea-4598-8258-aceb7531dc87638372191942298387",
+            "inputSocketId": "18971329-9d01-4c1c-b053-b44bfdabadb5638372192038910434"
+        },
+        {
+            "id": "1bf217cb-db7c-41ba-a3d9-bbe0092cc558",
+            "outputSocketId": "5d23a7a7-6a53-44ce-bc87-a12ea505738a638372213529977408",
+            "inputSocketId": "6f28b867-00ce-46b9-8b3c-8d1e0f1044c2638372213743298397"
+        },
+        {
+            "id": "c7e75d8e-12e9-495f-ad14-ad544b2ecc5d",
+            "outputSocketId": "7df88b60-fe7f-455b-b113-580d93acf30d638372213542796483",
+            "inputSocketId": "6f28b867-00ce-46b9-8b3c-8d1e0f1044c2638372213743298397"
+        },
+        {
+            "id": "ce894b46-6d77-4793-9428-643f8cef4d5a",
+            "outputSocketId": "a1f74bba-2543-49b2-a987-eb208fcc63ff638372213556118788",
+            "inputSocketId": "2d221f1f-d675-42d0-9c6b-06b70d170784638372213760245164"
+        },
+        {
+            "id": "34059c6d-0591-4375-9878-3f41f8ec46af",
+            "outputSocketId": "7daa74c0-104e-4341-842a-672df131702b638372213569050866",
+            "inputSocketId": "2d221f1f-d675-42d0-9c6b-06b70d170784638372213760245164"
+        },
+        {
+            "id": "c8e622fe-59f9-460c-81ea-f0ea0c5cccfb",
+            "outputSocketId": "31dda549-9e81-47ea-b353-7a69968caeb3638372213725265447",
+            "inputSocketId": "6b5e872f-d13b-4a92-bd29-d0351ce5b33d638372213813611930"
+        },
+        {
+            "id": "f4155b00-efe4-4522-bce9-00fd945b37c3",
+            "outputSocketId": "02864a0d-4977-405c-96a7-51259deb1878638372213710887109",
+            "inputSocketId": "6b5e872f-d13b-4a92-bd29-d0351ce5b33d638372213813611930"
+        },
+        {
+            "id": "231af85c-2b5e-4243-98ab-ac2088bcaf71",
+            "outputSocketId": "206c90f3-7208-4c18-855d-cc9f147791f3638372213698865855",
+            "inputSocketId": "eac0e649-026b-4e08-8edd-d803601a7b48638372213801317250"
+        },
+        {
+            "id": "d7dcf303-75e3-4a72-9aab-6a35e6ea1fa7",
+            "outputSocketId": "3b002eda-ce71-45d5-b11a-af1e87b9f46e638372213683005611",
+            "inputSocketId": "eac0e649-026b-4e08-8edd-d803601a7b48638372213801317250"
+        },
+        {
+            "id": "5a4e45bc-57f8-4c25-a524-715dea6154f9",
+            "outputSocketId": "ee026991-5b38-4b5e-989f-f9cdedd4fc5e638372213628445678",
+            "inputSocketId": "d12f6a19-222f-4fb6-a98b-0bc4755b254c638372213788354868"
+        },
+        {
+            "id": "ff8c5f85-5c63-45a4-a1de-6f606435f618",
+            "outputSocketId": "9b17b788-8846-45b1-9ac9-0e4dd917303c638372213609813249",
+            "inputSocketId": "d12f6a19-222f-4fb6-a98b-0bc4755b254c638372213788354868"
+        },
+        {
+            "id": "aca8aa9a-bba2-441d-82dc-55716f71c157",
+            "outputSocketId": "dfd5d37a-d6e0-4bad-818e-16b560522c6c638372213597211469",
+            "inputSocketId": "4d57b3fd-a0a6-4259-a2bb-0d1df3de7f7f638372213774726338"
+        },
+        {
+            "id": "6ce6e625-9751-48cb-ad37-5b131ae09ffc",
+            "outputSocketId": "1b1ecea9-996e-4df9-95fb-b84086900ef0638372213581986849",
+            "inputSocketId": "4d57b3fd-a0a6-4259-a2bb-0d1df3de7f7f638372213774726338"
+        },
+        {
+            "id": "cbe89e82-214a-46a9-abbe-72a2dd368048",
+            "outputSocketId": "97a29600-5ad4-4bde-a2ad-798fabed446f638372219963664470",
+            "inputSocketId": "ded917a1-87b2-4cc7-80c6-e31f2a25c915638372220200086335"
+        },
+        {
+            "id": "b20dca4a-a7b4-488d-8b91-cc42db083ad6",
+            "outputSocketId": "266c3ff5-f7e0-4659-b09b-67abade27a5f638372219992686754",
+            "inputSocketId": "ded917a1-87b2-4cc7-80c6-e31f2a25c915638372220200086335"
+        },
+        {
+            "id": "676a5f8d-0f8d-4350-8f06-62137f90bfa4",
+            "outputSocketId": "d112899c-4030-434a-9def-4e9977147df4638372220018324156",
+            "inputSocketId": "5ecf5e35-2ee1-4b40-b09c-c4caca6bc29b638372220222862590"
+        },
+        {
+            "id": "ac59f6d2-b053-44a0-94ec-2476fcd9b7f1",
+            "outputSocketId": "23ef0eaf-ddfc-4aea-a1ee-666a256be431638372220044911443",
+            "inputSocketId": "5ecf5e35-2ee1-4b40-b09c-c4caca6bc29b638372220222862590"
+        },
+        {
+            "id": "bd419721-14cb-469e-9c55-8928aea9ce50",
+            "outputSocketId": "9624ea19-e6ec-44d5-aa68-4d8c788033bf638372220085240701",
+            "inputSocketId": "2013cd8e-2270-4273-a02a-a4b51618ae1e638372220248403046"
+        },
+        {
+            "id": "baafdb69-0318-467c-a088-50f359002ee8",
+            "outputSocketId": "1c04b632-83e7-4ee7-aa91-c532b659bba2638372220108447181",
+            "inputSocketId": "2013cd8e-2270-4273-a02a-a4b51618ae1e638372220248403046"
+        },
+        {
+            "id": "4c8f95c4-e7dd-46e3-a0db-c1342cbf3ea0",
+            "outputSocketId": "8a359c7b-1075-447e-9e4c-5857e86344a9638372220138862625",
+            "inputSocketId": "9fdd8fbe-1b5b-448e-ad66-6dd1bf3056a1638372220272263442"
+        },
+        {
+            "id": "05e1ddee-d9be-49c2-9c4c-b8784f4d07aa",
+            "outputSocketId": "535636e1-975a-4c8e-8eb7-8f234b601757638372220166696535",
+            "inputSocketId": "9fdd8fbe-1b5b-448e-ad66-6dd1bf3056a1638372220272263442"
+        },
+        {
+            "id": "2ef6635d-de25-40ed-93eb-749dcc27375d",
+            "outputSocketId": "eb39eb04-827b-49ef-b791-db3c26877f04638372219948437788",
+            "inputSocketId": "39c0eb81-3ea3-441d-ba50-0f332b9e39c3638372220188614248"
+        },
+        {
+            "id": "d32117a7-c39c-4427-940b-66e0cc45fd00",
+            "outputSocketId": "86c510aa-80d4-4e26-a2c5-3ea33b860b63638372219979869962",
+            "inputSocketId": "39c0eb81-3ea3-441d-ba50-0f332b9e39c3638372220188614248"
+        },
+        {
+            "id": "a5e5ea80-e8de-46dd-9ff4-d99a33fd1b6d",
+            "outputSocketId": "4e77b71e-1002-4c86-93a1-74ebdf503ce7638372220005647975",
+            "inputSocketId": "33ab8514-d28f-49cc-92cb-5e15df2fff08638372220212440763"
+        },
+        {
+            "id": "cd6454e9-4da0-48c4-b91a-aa710fc6129e",
+            "outputSocketId": "e8c83bb1-54f1-459f-8896-e95dc8161e35638372220031955607",
+            "inputSocketId": "33ab8514-d28f-49cc-92cb-5e15df2fff08638372220212440763"
+        },
+        {
+            "id": "97146162-a68b-45af-b05d-5b63c04b5b28",
+            "outputSocketId": "3a153788-d6b4-4d1f-9b93-6961467dc206638372220071318019",
+            "inputSocketId": "24b0e4cd-8ce8-4ad4-8d69-168fdf8b8b3c638372220236383156"
+        },
+        {
+            "id": "a7e983a3-37f5-4976-adc7-94cf4f444ff1",
+            "outputSocketId": "c05c2225-6602-4b4e-9572-7cd510e72a06638372220097805581",
+            "inputSocketId": "24b0e4cd-8ce8-4ad4-8d69-168fdf8b8b3c638372220236383156"
+        },
+        {
+            "id": "f708cc57-1eb5-4175-bec0-38f07e1bc9d4",
+            "outputSocketId": "9258e691-feea-4cbf-b29d-b301e7ee695f638372220123780770",
+            "inputSocketId": "9f72bcce-98c7-4225-ae83-aab3dc1db312638372220261555875"
+        },
+        {
+            "id": "ca45ebec-ae54-43d1-9d57-cbee3a3f508b",
+            "outputSocketId": "e2e7d470-6813-4f3e-b449-62f45ec3a6bc638372220150385938",
+            "inputSocketId": "9f72bcce-98c7-4225-ae83-aab3dc1db312638372220261555875"
+        },
+        {
+            "id": "803d0946-339a-4a47-8bd7-43842f76fc9c",
+            "outputSocketId": "78ce66b1-33f0-4393-b6a6-f59dff1b1b59638372227230056893",
+            "inputSocketId": "80343805-8466-40d4-92e1-0c9da07c4216638372227381877142"
+        },
+        {
+            "id": "909bff7b-84fe-4026-a0ca-82291f5ab788",
+            "outputSocketId": "4f8b4b8d-76a9-4845-9304-7da21b677bb5638372227263866807",
+            "inputSocketId": "80343805-8466-40d4-92e1-0c9da07c4216638372227381877142"
+        },
+        {
+            "id": "b6583516-daa5-4277-aaa8-8b8e5166e5aa",
+            "outputSocketId": "ea3cb520-ec1b-428f-b06e-ae08da432117638372227277836296",
+            "inputSocketId": "3547dbb5-f54f-4115-8dab-fc8c062453af638372227395059506"
+        },
+        {
+            "id": "88a0484f-05dc-471b-801f-dff28245b1fe",
+            "outputSocketId": "258fcf28-2e05-4603-b89b-064c5d3d8c5d638372227290644680",
+            "inputSocketId": "3547dbb5-f54f-4115-8dab-fc8c062453af638372227395059506"
+        },
+        {
+            "id": "ae4a4459-eebd-4fd8-823b-e1012d881fc2",
+            "outputSocketId": "dcec94df-94c5-4214-a9a4-46b999dba91f638372227305619705",
+            "inputSocketId": "cb5c1710-71bb-425e-86dc-54d23237d44e638372227407180776"
+        },
+        {
+            "id": "b553fbd1-c0aa-4032-89a5-7aab61292769",
+            "outputSocketId": "a0c3d865-0483-4778-9284-9313e5f11368638372227319721918",
+            "inputSocketId": "cb5c1710-71bb-425e-86dc-54d23237d44e638372227407180776"
+        },
+        {
+            "id": "4c65c612-fb81-485b-81be-f82b14cbf33d",
+            "outputSocketId": "b36114c3-22cb-410c-9d56-9c35aa5f3cc9638372227334198052",
+            "inputSocketId": "b02be031-2fe0-4c59-8631-98f3f619b887638372227418423154"
+        },
+        {
+            "id": "99f88677-12f1-4b8c-9500-f94fc7467fce",
+            "outputSocketId": "1b74c628-1940-44f6-9f32-8937c7f61959638372227347200106",
+            "inputSocketId": "b02be031-2fe0-4c59-8631-98f3f619b887638372227418423154"
+        }
+    ]
+}

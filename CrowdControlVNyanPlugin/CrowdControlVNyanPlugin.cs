@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using CrowdControlVNyanPlugin.CrowdControl.TRPC.Entities;
+using CrowdControlVNyanPlugin.VNyanPluginHelper;
 
 namespace CrowdControlVNyanPlugin
 {
@@ -34,7 +35,6 @@ namespace CrowdControlVNyanPlugin
         public MainThreadDispatcher mainThread;
 
         private VNyanHelper _VNyanHelper;
-        private VNyanTriggerDispatcher triggerDispatcher;
         private CrowdControlManager crowdControlManager;
         
 
@@ -45,17 +45,16 @@ namespace CrowdControlVNyanPlugin
         public void Awake()
         {
             
-            Debug.Log($"Crowd Control Plugin is Awake!");
+            Debug.Log($"[CrowdControlPlugin] Crowd Control Plugin is Awake!");
             _VNyanHelper = new VNyanHelper();
             ccToken = "";
-            Debug.Log($"Loading Settings");
+            Debug.Log($"[CrowdControlPlugin] Loading Settings");
             // Load settings
             loadPluginSettings();
 
-            Debug.Log($"Beginning Plugin Setup");
+            Debug.Log($"[CrowdControlPlugin] Beginning Plugin Setup");
             
             mainThread = gameObject.AddComponent<MainThreadDispatcher>();
-            triggerDispatcher = gameObject.AddComponent<VNyanTriggerDispatcher>();
             
             try
             {
@@ -92,7 +91,7 @@ namespace CrowdControlVNyanPlugin
 
                 try
                 {
-                    Debug.Log($"Preparing Plugin Window");
+                    Debug.Log($"[CrowdControlPlugin] Preparing Plugin Window");
                     setGameSessionInfo("[No Active Session]", "", "");
 
                     window.transform.Find("Panel/TitleBar/CloseButton").GetComponent<Button>().onClick.AddListener(() => { closePluginWindow(); });
@@ -115,8 +114,8 @@ namespace CrowdControlVNyanPlugin
                 }
                 catch (Exception e)
                 {
-                    Debug.Log($"Couldn't prepare Plugin Window: {e.Message}");
-                    setStatusTitle("Couldn't prepare Plugin Window");
+                    Debug.Log($"[CrowdControlPlugin] Couldn't prepare Plugin Window: {e.Message}");
+                    setStatusTitle("[CrowdControlPlugin] Couldn't prepare Plugin Window");
                     Debug.Log(e.ToString());
                 }
 
@@ -129,7 +128,7 @@ namespace CrowdControlVNyanPlugin
                 }
                 catch (Exception e)
                 {
-                    setStatusTitle("Couldn't auto-initialize Crowd Control Connection");
+                    setStatusTitle("[CrowdControlPlugin] Couldn't auto-initialize Crowd Control Connection");
                 }
             }
 
@@ -207,7 +206,6 @@ namespace CrowdControlVNyanPlugin
         public void pluginButtonClicked()
         {
             // Flip the visibility of the window when plugin window button is clicked
-            Debug.Log("plugin button clicked");
             if (window != null)
             {
                 window.SetActive(!window.activeSelf);

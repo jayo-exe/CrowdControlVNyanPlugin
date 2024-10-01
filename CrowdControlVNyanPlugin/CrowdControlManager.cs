@@ -17,6 +17,7 @@ using CrowdControlVNyanPlugin.CrowdControl.PubSub.Messages;
 using CrowdControlVNyanPlugin.CrowdControl.PubSub.Messages.Entities;
 using CrowdControlVNyanPlugin.CrowdControl.TRPC;
 using CrowdControlVNyanPlugin.CrowdControl.TRPC.Entities;
+using CrowdControlVNyanPlugin.VNyanPluginHelper;
 
 using VNyanInterface;
 
@@ -30,7 +31,6 @@ namespace CrowdControlVNyanPlugin
 
         private CrowdControlVNyanPlugin plugin;
         private VNyanHelper _VNyanHelper;
-        private VNyanTriggerDispatcher triggerDispatcher;
         
         public Material screenMaterial;
         public Texture baseScreenTexture;
@@ -48,38 +48,6 @@ namespace CrowdControlVNyanPlugin
         public List<GameEntity> games;
         private GamePackEntity gamePack;
 
-        private void ensureInit()
-        {
-            if (_VNyanHelper == null)
-            {
-                _VNyanHelper = new VNyanHelper();
-            }
-            if (triggerDispatcher == null)
-            {
-                triggerDispatcher = GetComponent<VNyanTriggerDispatcher>();
-            }
-            if (triggerHistory == null)
-            {
-                triggerHistory = new List<TriggerHistoryRecord>();
-            }
-            if (plugin == null)
-            {
-                plugin = GetComponent<CrowdControlVNyanPlugin>();
-            }
-            if (screenMaterial == null)
-            {
-                screenMaterial = plugin.screenMaterial;
-            }
-            if (baseScreenTexture == null)
-            {
-                baseScreenTexture = plugin.baseScreenTexture;
-            }
-            if (displayScreenRenderer == null)
-            {
-                displayScreenRenderer = plugin.displayScreenRenderer;
-            }
-        }
-
         public string GetAccessToken()
         {
             return plugin.ccToken;
@@ -92,7 +60,13 @@ namespace CrowdControlVNyanPlugin
 
         private void Awake()
         {
-            ensureInit();
+            _VNyanHelper = new VNyanHelper();
+            triggerHistory = new List<TriggerHistoryRecord>();
+            plugin = GetComponent<CrowdControlVNyanPlugin>();
+            screenMaterial = plugin.screenMaterial;
+            baseScreenTexture = plugin.baseScreenTexture;
+            displayScreenRenderer = plugin.displayScreenRenderer;
+
             pubsub = new CrowdControlPubSubClient();
             pubsub.PubSubStart += OnPubSubStart;
             pubsub.PubSubFailure += OnPubSubFailure;
@@ -124,7 +98,7 @@ namespace CrowdControlVNyanPlugin
         private void Start()
         {
             _VNyanHelper.setVNyanParameterString("_xcc_message", "Crowd Control Manager Loaded!");
-            Debug.Log("Crowd Control Manager Loaded!");
+            Debug.Log("[CrowdControlPlugin] Crowd Control Manager Loaded!");
             currentScreenTexture = baseScreenTexture;
             displayScreenRenderer.texture = currentScreenTexture;
 
@@ -152,12 +126,9 @@ namespace CrowdControlVNyanPlugin
 
         private void Update()
         {
-            ensureInit();
-
-            if (displayScreenRenderer != null && displayScreenRenderer.texture != currentScreenTexture)
-            {
-                displayScreenRenderer.texture = currentScreenTexture;
-            }
+            if (displayScreenRenderer == null) return;
+            if (displayScreenRenderer.texture == currentScreenTexture) return;
+            displayScreenRenderer.texture = currentScreenTexture;
         }
 
 
@@ -165,7 +136,7 @@ namespace CrowdControlVNyanPlugin
         {
             if (state == PlayModeStateChange.ExitingPlayMode)
             {
-                Debug.Log("Exiting Play Mode");
+                Debug.Log("[CrowdControlPlugin] Exiting Play Mode");
                 pubsub.deInitSocket();
             }
         }
@@ -177,7 +148,7 @@ namespace CrowdControlVNyanPlugin
 
         private void OnTRPCLog(object sender, object message)
         {
-            Debug.Log($"[CC TRPC] " + message.ToString());
+            //Debug.Log($"[CC TRPC] " + message.ToString());
         }
         private void OnPubSubStart(object sender, EventArgs e)
         {
@@ -203,7 +174,7 @@ namespace CrowdControlVNyanPlugin
 
         private void OnPubSubLog(object sender, object message)
         {
-            Debug.Log($"[CC PubSub] " + message.ToString());
+            //Debug.Log($"[CC PubSub] " + message.ToString());
         }
 
         private void OnLoginRequested(object sender, string loginURL)
@@ -235,20 +206,24 @@ namespace CrowdControlVNyanPlugin
 
         private void OnGameSessionStart(object sender, GameSessionStartMessage message)
         {
-            Debug.Log($"Game Session {message.payload.gameSessionID} Started!");
+            Debug.Log($"[CrowdControlPlugin] Game Session {message.payload.gameSessionID} Started!");
             fetchGameSession();
             plugin.mainThread.Enqueue(() => {
                 plugin.triggerBrowserSessionText.SetActive(false);
                 plugin.triggerHistorySessionText.SetActive(false);
+                _VNyanHelper.setVNyanParameterString("_xcc_gameSessionID", message.payload.gameSessionID);
             });
-            _VNyanHelper.setVNyanParameterString("_xcc_gameSessionID", message.payload.gameSessionID);
+            
 
         }
 
         private void OnGameSessionStop(object sender, GameSessionStopMessage message)
         {
-            Debug.Log($"Game Session {message.payload.gameSessionID} Stopped!");
-            _VNyanHelper.setVNyanParameterString("_xcc_gameSessionID", "");
+            Debug.Log($"[CrowdControlPlugin] Game Session {message.payload.gameSessionID} Stopped!");
+            plugin.mainThread.Enqueue(() =>
+            {
+                _VNyanHelper.setVNyanParameterString("_xcc_gameSessionID", "");
+            });
             currentScreenTexture = baseScreenTexture;
             clearGameSession();
         }
@@ -257,13 +232,15 @@ namespace CrowdControlVNyanPlugin
         {
             var payload = message.payload;
 
-            _VNyanHelper.setVNyanParameterString("_xcc_erq_effectID", payload.effect.effectID);
-            _VNyanHelper.setVNyanParameterString("_xcc_erq_name", payload.effect.name);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erq_quantity", (float)payload.quantity);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erq_duration", (float)payload.effect.duration);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erq_price", payload.price);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erq_remaining", (float)payload.timeRemaining);
-            _VNyanHelper.setVNyanParameterString("_xcc_erq_sender", payload.requester.name);
+            plugin.mainThread.Enqueue(() => {
+                _VNyanHelper.setVNyanParameterString("_xcc_erq_effectID", payload.effect.effectID);
+                _VNyanHelper.setVNyanParameterString("_xcc_erq_name", payload.effect.name);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erq_quantity", (float)payload.quantity);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erq_duration", (float)payload.effect.duration);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erq_price", payload.price);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erq_remaining", (float)payload.timeRemaining);
+                _VNyanHelper.setVNyanParameterString("_xcc_erq_sender", payload.requester.name);
+            });
 
             callEffectTrigger("erq", payload.effect.effectID, payload.effect.name, payload.requester.name);
         }
@@ -272,14 +249,16 @@ namespace CrowdControlVNyanPlugin
         {
             var payload = message.payload;
 
-            _VNyanHelper.setVNyanParameterString("_xcc_ert_effectID", payload.effect.effectID);
-            _VNyanHelper.setVNyanParameterString("_xcc_ert_name", payload.effect.name);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_ert_quantity", (float)payload.quantity);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_ert_duration", (float)payload.effect.duration);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_ert_price", payload.price);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_ert_remaining", (float)payload.timeRemaining);
-            _VNyanHelper.setVNyanParameterString("_xcc_ert_sender", payload.requester.name);
-
+            plugin.mainThread.Enqueue(() => {
+                _VNyanHelper.setVNyanParameterString("_xcc_ert_effectID", payload.effect.effectID);
+                _VNyanHelper.setVNyanParameterString("_xcc_ert_name", payload.effect.name);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_ert_quantity", (float)payload.quantity);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_ert_duration", (float)payload.effect.duration);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_ert_price", payload.price);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_ert_remaining", (float)payload.timeRemaining);
+                _VNyanHelper.setVNyanParameterString("_xcc_ert_sender", payload.requester.name);
+            });
+            
             callEffectTrigger("ert", payload.effect.effectID, payload.effect.name, payload.requester.name);
         }
 
@@ -287,13 +266,15 @@ namespace CrowdControlVNyanPlugin
         {
             var payload = message.payload;
 
-            _VNyanHelper.setVNyanParameterString("_xcc_erf_effectID", payload.effect.effectID);
-            _VNyanHelper.setVNyanParameterString("_xcc_erf_name", payload.effect.name);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erf_quantity", (float)payload.quantity);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erf_duration", (float)payload.effect.duration);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erf_price", payload.price);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_erf_remaining", (float)payload.timeRemaining);
-            _VNyanHelper.setVNyanParameterString("_xcc_erf_sender", payload.requester.name);
+            plugin.mainThread.Enqueue(() => {
+                _VNyanHelper.setVNyanParameterString("_xcc_erf_effectID", payload.effect.effectID);
+                _VNyanHelper.setVNyanParameterString("_xcc_erf_name", payload.effect.name);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erf_quantity", (float)payload.quantity);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erf_duration", (float)payload.effect.duration);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erf_price", payload.price);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_erf_remaining", (float)payload.timeRemaining);
+                _VNyanHelper.setVNyanParameterString("_xcc_erf_sender", payload.requester.name);
+            });   
 
             callEffectTrigger("erf", payload.effect.effectID, payload.effect.name, payload.requester.name);
         }
@@ -302,14 +283,16 @@ namespace CrowdControlVNyanPlugin
         {
             var payload = message.payload;
 
-            _VNyanHelper.setVNyanParameterString("_xcc_esc_effectID", payload.effect.effectID);
-            _VNyanHelper.setVNyanParameterString("_xcc_esc_name", payload.effect.name);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_esc_quantity", (float)payload.quantity);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_esc_duration", (float)payload.effect.duration);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_esc_price", payload.price);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_esc_remaining", (float)payload.timeRemaining);
-            _VNyanHelper.setVNyanParameterString("_xcc_esc_sender", payload.requester.name);
-
+            plugin.mainThread.Enqueue(() => {
+                _VNyanHelper.setVNyanParameterString("_xcc_esc_effectID", payload.effect.effectID);
+                _VNyanHelper.setVNyanParameterString("_xcc_esc_name", payload.effect.name);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_esc_quantity", (float)payload.quantity);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_esc_duration", (float)payload.effect.duration);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_esc_price", payload.price);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_esc_remaining", (float)payload.timeRemaining);
+                _VNyanHelper.setVNyanParameterString("_xcc_esc_sender", payload.requester.name);
+            });
+            
             callEffectTrigger("esc", payload.effect.effectID, payload.effect.name, payload.requester.name);
         }
 
@@ -317,14 +300,16 @@ namespace CrowdControlVNyanPlugin
         {
             var payload = message.payload;
 
-            _VNyanHelper.setVNyanParameterString("_xcc_efl_effectID", payload.effect.effectID);
-            _VNyanHelper.setVNyanParameterString("_xcc_efl_name", payload.effect.name);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_efl_quantity", (float)payload.quantity);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_efl_duration", (float)payload.effect.duration);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_efl_price", payload.price);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_efl_remaining", (float)payload.timeRemaining);
-            _VNyanHelper.setVNyanParameterString("_xcc_efl_sender", payload.requester.name);
-
+            plugin.mainThread.Enqueue(() => {
+                _VNyanHelper.setVNyanParameterString("_xcc_efl_effectID", payload.effect.effectID);
+                _VNyanHelper.setVNyanParameterString("_xcc_efl_name", payload.effect.name);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_efl_quantity", (float)payload.quantity);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_efl_duration", (float)payload.effect.duration);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_efl_price", payload.price);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_efl_remaining", (float)payload.timeRemaining);
+                _VNyanHelper.setVNyanParameterString("_xcc_efl_sender", payload.requester.name);
+            });
+            
             callEffectTrigger("efl", payload.effect.effectID, payload.effect.name, payload.requester.name);
         }
 
@@ -332,22 +317,25 @@ namespace CrowdControlVNyanPlugin
         {
             var payload = message.payload;
 
-            _VNyanHelper.setVNyanParameterString("_xcc_teu_effectID", payload.effect.effectID);
-            _VNyanHelper.setVNyanParameterString("_xcc_teu_name", payload.effect.name);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_teu_quantity", (float)payload.quantity);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_teu_duration", (float)payload.effect.duration);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_teu_price", payload.price);
-            _VNyanHelper.setVNyanParameterFloat("_xcc_teu_remaining", (float)payload.timeRemaining);
-            _VNyanHelper.setVNyanParameterString("_xcc_teu_sender", payload.requester.name);
-            _VNyanHelper.setVNyanParameterString("_xcc_teu_status", payload.status);
-
+            plugin.mainThread.Enqueue(() => {
+                _VNyanHelper.setVNyanParameterString("_xcc_teu_effectID", payload.effect.effectID);
+                _VNyanHelper.setVNyanParameterString("_xcc_teu_name", payload.effect.name);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_teu_quantity", (float)payload.quantity);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_teu_duration", (float)payload.effect.duration);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_teu_price", payload.price);
+                _VNyanHelper.setVNyanParameterFloat("_xcc_teu_remaining", (float)payload.timeRemaining);
+                _VNyanHelper.setVNyanParameterString("_xcc_teu_sender", payload.requester.name);
+                _VNyanHelper.setVNyanParameterString("_xcc_teu_status", payload.status);
+            });
+            
             callEffectTrigger("teu", payload.effect.effectID, payload.effect.name, payload.requester.name, $"_{payload.status}");
         }
 
         private void callEffectTrigger(string code, string effectID, string effectName, string effectSender, string suffix = "")
         {
             plugin.mainThread.Enqueue(() => {
-                triggerDispatcher.callVNyanTrigger($"_xcc_{code}_{effectID}{suffix}");
+                _VNyanHelper.setVNyanParameterString("_xcc_trigger", $"_xcc_{code}_{effectID}{suffix}");
+                _VNyanHelper.callTrigger($"_xcc_{code}_{effectID}{suffix}");
                 triggerHistory.Add(new TriggerHistoryRecord
                 {
                     timestamp = System.DateTime.Now.ToString("hh:mm:ss"),
@@ -366,7 +354,7 @@ namespace CrowdControlVNyanPlugin
 
             if (gameSession != null)
             {
-                Debug.Log($"Got game session: {gameSession.gameSessionID}! {gameSession.owner.name} is playing {gameSession.gamePack.meta.name}.");
+                Debug.Log($"[CrowdControlPlugin] Got game session: {gameSession.gameSessionID}! {gameSession.owner.name} is playing {gameSession.gamePack.meta.name}.");
                 var gamePacks = await trpc.getGamePacks(gameSession.gamePack.game.gameID);
                 foreach(GamePackEntity gp in gamePacks)
                 {
@@ -400,18 +388,18 @@ namespace CrowdControlVNyanPlugin
         IEnumerator LoadGameTexture(GameSessionEntity gameSession)
         {
 
-            Debug.Log($"Loading Box Art Texture https://resources.crowdcontrol.live/images/{gameSession.gamePack.game.gameID}/box.jpg");
+            Debug.Log($"[CrowdControlPlugin] Loading Box Art Texture https://resources.crowdcontrol.live/images/{gameSession.gamePack.game.gameID}/box.jpg");
             using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture($"https://resources.crowdcontrol.live/images/{gameSession.gamePack.game.gameID}/box.jpg"))
             {
                 yield return uwr.SendWebRequest();
-                Debug.Log("Texture Request done!");
+                Debug.Log("[CrowdControlPlugin] Texture Request done!");
                 if (uwr.result != UnityWebRequest.Result.Success)
                 {
                     Debug.Log(uwr.error);
                 }
                 else
                 {
-                    Debug.Log("Loaded External Texture");
+                    Debug.Log("[CrowdControlPlugin] Loaded External Texture");
                     var texture = DownloadHandlerTexture.GetContent(uwr);
                     currentScreenTexture = texture;
                 }

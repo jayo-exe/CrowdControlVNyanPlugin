@@ -44,7 +44,7 @@ namespace CrowdControlVNyanPlugin
         //populate trigger name dictionary
         private void BuildTriggerDictionary()
         {
-            Debug.Log("Adding Initial Trigger Items");
+            Debug.Log("[CrowdControlPlugin] Adding Initial Trigger Items");
             triggerNames.Add("success", $"_xcc_esc_{gameEffectID}");
             triggerList.Add(new Dropdown.OptionData("success"));
             triggerNames.Add("request", $"_xcc_erq_{gameEffectID}");
@@ -56,13 +56,13 @@ namespace CrowdControlVNyanPlugin
             triggerNames.Add("failure", $"_xcc_efl_{gameEffectID}");
             triggerList.Add(new Dropdown.OptionData("failure"));
 
-            Debug.Log("Checking for Duration");
+            Debug.Log("[CrowdControlPlugin] Checking for Duration");
             if (gameEffect.duration == null || gameEffect.duration.value == 0)
             {
                 return;
             }
 
-            Debug.Log("Adding Timed Trigger Items");
+            Debug.Log("[CrowdControlPlugin] Adding Timed Trigger Items");
             triggerNames.Add("timed-begin", $"_xcc_teu_{gameEffectID}_begin");
             triggerList.Add(new Dropdown.OptionData("timed-begin"));
             triggerNames.Add("timed-pause", $"_xcc_teu_{gameEffectID}_pause");

@@ -1,0 +1,976 @@
+{
+    "graphName": "LTTP Interactions",
+    "graphIsActive": true,
+    "nodes": [
+        {
+            "id": "dfe377e0-8a72-405d-91b8-42d2044d530b",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveRupees"
+                }
+            ],
+            "posX": -136.83380126953126,
+            "posY": 652.0006103515625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "5e91980d-0324-42c1-9090-dcaa15e28a64638372247650189769"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "eb5d7602-d7e6-442b-b5a0-4a5382d71a5c",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveArrows"
+                }
+            ],
+            "posX": 920.4996337890625,
+            "posY": 653.3338623046875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "c21c0a41-f4eb-4770-a231-8b36f5cda5ff638372247763935270"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "faebb133-2ed8-482b-b180-71ae886474a8",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveBombs"
+                }
+            ],
+            "posX": 409.49957275390627,
+            "posY": 652.3338623046875,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "492689cd-142d-4f19-9004-cc6ecf5a0fa6638372247779605968"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "fa432c04-c661-40c2-9c09-e1a93ceb75d9",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartIcePhysics"
+                }
+            ],
+            "posX": -80.833984375,
+            "posY": -61.33277893066406,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "21e5b3a5-9f6f-42e9-8473-c9ba0d60e19b638372248373410001"
+            ],
+            "headerColor": 5
+        },
+        {
+            "id": "1c9dbf69-45bb-4299-b00f-c004a153a263",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopIcePhysics"
+                }
+            ],
+            "posX": -86.83380126953125,
+            "posY": -343.6661071777344,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "7f45f9bc-a476-4689-ad37-9ad74c333caf638372248384857005"
+            ],
+            "headerColor": 5
+        },
+        {
+            "id": "11884cc6-9ba7-4239-88b9-1eda2453b04f",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveSmMagic"
+                }
+            ],
+            "posX": -68.50042724609375,
+            "posY": 272.33392333984377,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "ac7b0fa7-b01c-458d-99ea-71af2ca731c6638372249054320558"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "88c79f5d-0f96-4c32-b533-4ec57a24bce1",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveLgMagic"
+                }
+            ],
+            "posX": 458.49957275390627,
+            "posY": 273.33392333984377,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "28a31463-3023-4ea8-b419-00751bede9e1638372249145626649"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "7e96589d-1ba9-401b-a2b3-565d9162a977",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "GiveHeart"
+                }
+            ],
+            "posX": 979.4996337890625,
+            "posY": 274.33392333984377,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "8aa0e427-9cae-4a50-bd2a-97e8597ed49e638372249356497566"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "1ea9a0c4-c74f-46c2-863f-ccf772900966",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StartCuccos"
+                }
+            ],
+            "posX": 438.1662292480469,
+            "posY": -518.3326416015625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "e6347c45-c795-48db-8b22-56ef7f0b0753638372250486937970"
+            ],
+            "headerColor": 5
+        },
+        {
+            "id": "26706263-3621-4e97-8584-cc9a375082e7",
+            "values": [
+                {
+                    "key": "triggerName",
+                    "value": "StopCuccos"
+                }
+            ],
+            "posX": 433.8328552246094,
+            "posY": -703.666015625,
+            "path": "Nodes/TriggerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "33a916a7-ffbe-499c-9620-986f1611967b638372250498718010"
+            ],
+            "headerColor": 5
+        },
+        {
+            "id": "0be61734-0a8f-40d0-aa88-54a1861fdd4f",
+            "values": [
+                {
+                    "key": "amount",
+                    "value": "[_xcc_esc_quantity]"
+                },
+                {
+                    "key": "items",
+                    "value": "GreenGem"
+                },
+                {
+                    "key": "flinch",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "2"
+                },
+                {
+                    "key": "cooldown",
+                    "value": "25"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "1"
+                },
+                {
+                    "key": "dir",
+                    "value": "0"
+                },
+                {
+                    "key": "bone",
+                    "value": "8"
+                },
+                {
+                    "key": "altitude",
+                    "value": "0.5"
+                },
+                {
+                    "key": "force",
+                    "value": "5.081529"
+                },
+                {
+                    "key": "sticky",
+                    "value": "0"
+                },
+                {
+                    "key": "sticktime",
+                    "value": ""
+                }
+            ],
+            "posX": 148.666015625,
+            "posY": 640.3341064453125,
+            "path": "Nodes/ThrowNode",
+            "inputSocketIds": [
+                "da240f1b-ba70-42bd-a06a-8ad51bcd956a638372250957058392"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "45b4d9b9-44bc-4686-b85e-ca74584bf21d",
+            "values": [
+                {
+                    "key": "amount",
+                    "value": "[_xcc_esc_quantity]"
+                },
+                {
+                    "key": "items",
+                    "value": "Bomb"
+                },
+                {
+                    "key": "flinch",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "2"
+                },
+                {
+                    "key": "cooldown",
+                    "value": "25"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "1"
+                },
+                {
+                    "key": "dir",
+                    "value": "0"
+                },
+                {
+                    "key": "bone",
+                    "value": "8"
+                },
+                {
+                    "key": "altitude",
+                    "value": "0.5"
+                },
+                {
+                    "key": "force",
+                    "value": "5.081529"
+                },
+                {
+                    "key": "sticky",
+                    "value": "0"
+                },
+                {
+                    "key": "sticktime",
+                    "value": ""
+                }
+            ],
+            "posX": 657.6660766601563,
+            "posY": 640.3341064453125,
+            "path": "Nodes/ThrowNode",
+            "inputSocketIds": [
+                "ba9402cb-7153-4192-b366-3e49d7c3760d638372253246815791"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "1e674000-2fd9-4bb9-b0a9-7a5f2a01fc06",
+            "values": [
+                {
+                    "key": "amount",
+                    "value": "[_xcc_esc_quantity]"
+                },
+                {
+                    "key": "items",
+                    "value": "Arrow"
+                },
+                {
+                    "key": "flinch",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "2"
+                },
+                {
+                    "key": "cooldown",
+                    "value": "25"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "1"
+                },
+                {
+                    "key": "dir",
+                    "value": "0"
+                },
+                {
+                    "key": "bone",
+                    "value": "8"
+                },
+                {
+                    "key": "altitude",
+                    "value": "0.5"
+                },
+                {
+                    "key": "force",
+                    "value": "5.081529"
+                },
+                {
+                    "key": "sticky",
+                    "value": "0"
+                },
+                {
+                    "key": "sticktime",
+                    "value": ""
+                }
+            ],
+            "posX": 1171.666015625,
+            "posY": 642.3341064453125,
+            "path": "Nodes/ThrowNode",
+            "inputSocketIds": [
+                "f3dc22e7-66db-4d81-a713-22cdea62aadf638372253600705175"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "cee7f9c6-de1a-4825-95df-35b32466dc98",
+            "values": [
+                {
+                    "key": "items",
+                    "value": "MagicJar"
+                },
+                {
+                    "key": "amount",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "5"
+                },
+                {
+                    "key": "random",
+                    "value": "1"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "mass",
+                    "value": ""
+                },
+                {
+                    "key": "drag",
+                    "value": ""
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "1"
+                }
+            ],
+            "posX": 185.666015625,
+            "posY": 260.3341369628906,
+            "path": "Nodes/DropNode",
+            "inputSocketIds": [
+                "59042ad2-f975-4746-a4f1-9c7b9d26ff7d638372253850495998"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "acbf91e2-972d-4a29-a444-96766a9047b9",
+            "values": [
+                {
+                    "key": "items",
+                    "value": "MagicJar"
+                },
+                {
+                    "key": "amount",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "5"
+                },
+                {
+                    "key": "random",
+                    "value": "1"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "mass",
+                    "value": ""
+                },
+                {
+                    "key": "drag",
+                    "value": ""
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "2.5"
+                }
+            ],
+            "posX": 712.6660766601563,
+            "posY": 260.3341369628906,
+            "path": "Nodes/DropNode",
+            "inputSocketIds": [
+                "b1f469f2-fb8d-4049-9887-2ffeae3622d7638372254273241209"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "52d1e6fc-c9e5-41f1-a71a-ab92310dafd0",
+            "values": [
+                {
+                    "key": "items",
+                    "value": "ChatBlob"
+                },
+                {
+                    "key": "amount",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "5"
+                },
+                {
+                    "key": "random",
+                    "value": "1"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "mass",
+                    "value": ""
+                },
+                {
+                    "key": "drag",
+                    "value": ""
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "1"
+                }
+            ],
+            "posX": 1233.666015625,
+            "posY": 261.3341369628906,
+            "path": "Nodes/DropNode",
+            "inputSocketIds": [
+                "91c0ca38-efba-4208-9888-af426e13752c638372254677015639"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "d0f8192f-4142-49a2-bf2c-d9b87c05dd01",
+            "values": [
+                {
+                    "key": "timerName",
+                    "value": "CuccoStorm"
+                }
+            ],
+            "posX": 436.3334045410156,
+            "posY": -357.6680603027344,
+            "path": "Nodes/TimerNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [
+                "a909b92b-33e3-4e32-9ade-0195852cdea3638372259340282170"
+            ],
+            "headerColor": 5
+        },
+        {
+            "id": "7fa3f89b-797c-49cf-bc69-0c7d877aca0b",
+            "values": [
+                {
+                    "key": "paramName",
+                    "value": "ShouldCuccoStorm"
+                },
+                {
+                    "key": "value",
+                    "value": "1"
+                }
+            ],
+            "posX": 654.33447265625,
+            "posY": -493.00140380859377,
+            "path": "Nodes/SetParamNode",
+            "inputSocketIds": [
+                "cf1a41da-e097-4898-891e-e817f55aa63b638372259878352434"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "76c23584-d36d-4714-a5c3-8dc926ff7bae",
+            "values": [
+                {
+                    "key": "paramName",
+                    "value": "ShouldCuccoStorm"
+                },
+                {
+                    "key": "value",
+                    "value": "0"
+                }
+            ],
+            "posX": 652.0011596679688,
+            "posY": -676.0012817382813,
+            "path": "Nodes/SetParamNode",
+            "inputSocketIds": [
+                "183ae19f-18b3-424f-beca-a63eceeb00c4638372260293565120"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "233e1e78-92b4-4761-a71d-526b89ba8ae7",
+            "values": [
+                {
+                    "key": "pname",
+                    "value": "ShouldCuccoStorm"
+                },
+                {
+                    "key": "pvalue",
+                    "value": "1"
+                }
+            ],
+            "posX": 654.3334350585938,
+            "posY": -337.6692810058594,
+            "path": "Nodes/FilterParamNode",
+            "inputSocketIds": [
+                "b0228664-8639-4ce2-9f2a-30ba43567ff6638372261205118195"
+            ],
+            "outputSocketIds": [
+                "9f5ad633-f0db-4acc-9ef7-4ce97cae233d638372261205118195",
+                "2a6e6166-ac4e-4434-a012-50360970bb6c638372261205118195",
+                "96128437-8fc8-4059-b220-22c2190f928c638372261205118195"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "a1d5d514-d228-4b4a-9d32-4b78e460cbc4",
+            "values": [],
+            "posX": 942.3334350585938,
+            "posY": -335.0025634765625,
+            "path": "Nodes/Random2Node",
+            "inputSocketIds": [
+                "0f37407b-97c1-4b18-93c8-30fe0b84011a638372261710838381"
+            ],
+            "outputSocketIds": [
+                "c398efd5-5222-4eb6-aca3-a4a98e995473638372261710838381",
+                "1c0f8046-cf98-4bd9-bca9-f758aebeeafa638372261710838381"
+            ],
+            "headerColor": 0
+        },
+        {
+            "id": "d4dae90d-8e8c-45ad-9897-115d4fa4039d",
+            "values": [
+                {
+                    "key": "amount",
+                    "value": "1"
+                },
+                {
+                    "key": "items",
+                    "value": "Duck"
+                },
+                {
+                    "key": "flinch",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "5"
+                },
+                {
+                    "key": "cooldown",
+                    "value": "25"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "1"
+                },
+                {
+                    "key": "dir",
+                    "value": "0"
+                },
+                {
+                    "key": "bone",
+                    "value": "8"
+                },
+                {
+                    "key": "altitude",
+                    "value": "0.5"
+                },
+                {
+                    "key": "force",
+                    "value": "5.081529"
+                },
+                {
+                    "key": "sticky",
+                    "value": "0"
+                },
+                {
+                    "key": "sticktime",
+                    "value": ""
+                }
+            ],
+            "posX": 1372.999267578125,
+            "posY": -243.99923706054688,
+            "path": "Nodes/ThrowNode",
+            "inputSocketIds": [
+                "3a16ee3f-34ac-4689-9a6e-efbdfc50a307638372261875810419"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "49eae557-5fb5-4759-ae1f-5501c289fb09",
+            "values": [
+                {
+                    "key": "items",
+                    "value": "Egg"
+                },
+                {
+                    "key": "amount",
+                    "value": "1"
+                },
+                {
+                    "key": "destroy",
+                    "value": "5"
+                },
+                {
+                    "key": "random",
+                    "value": "1"
+                },
+                {
+                    "key": "volume",
+                    "value": "1"
+                },
+                {
+                    "key": "mass",
+                    "value": ""
+                },
+                {
+                    "key": "drag",
+                    "value": ""
+                },
+                {
+                    "key": "tag",
+                    "value": ""
+                },
+                {
+                    "key": "scale",
+                    "value": "1"
+                }
+            ],
+            "posX": 1379.999267578125,
+            "posY": -583.999267578125,
+            "path": "Nodes/DropNode",
+            "inputSocketIds": [
+                "20a1a5a8-99dd-4e0b-96c9-ed4ca9d8407c638372261972202560"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "9d31f49e-0146-4b36-ab9f-c11510090ad9",
+            "values": [
+                {
+                    "key": "timerName",
+                    "value": "CuccoStorm"
+                },
+                {
+                    "key": "seconds",
+                    "value": "250"
+                }
+            ],
+            "posX": 942.0011596679688,
+            "posY": -531.0013427734375,
+            "path": "Nodes/SetTimerNode",
+            "inputSocketIds": [
+                "fe18814d-7b3d-43c7-9a92-044f03abd9f0638372262935197580"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "8c4fb594-fe56-4983-a77c-3ef17103ec75",
+            "values": [
+                {
+                    "key": "water_r",
+                    "value": "0"
+                },
+                {
+                    "key": "water_g",
+                    "value": "0.9729526"
+                },
+                {
+                    "key": "water_b",
+                    "value": "1"
+                },
+                {
+                    "key": "abs",
+                    "value": "240"
+                },
+                {
+                    "key": "sca",
+                    "value": "5"
+                }
+            ],
+            "posX": 87.3349609375,
+            "posY": -72.66885375976563,
+            "path": "Nodes/SlimeNode",
+            "inputSocketIds": [
+                "d85bbfff-7fea-480b-8512-e3d9a66fb79f638372276756291429"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "bf3ae937-ba31-4998-9b08-e9351d8008fe",
+            "values": [
+                {
+                    "key": "water_r",
+                    "value": "0"
+                },
+                {
+                    "key": "water_g",
+                    "value": "1"
+                },
+                {
+                    "key": "water_b",
+                    "value": "0.9270492"
+                },
+                {
+                    "key": "abs",
+                    "value": "240"
+                },
+                {
+                    "key": "sca",
+                    "value": "5"
+                }
+            ],
+            "posX": 82.3348388671875,
+            "posY": -356.0021667480469,
+            "path": "Nodes/SlimeNode",
+            "inputSocketIds": [
+                "db56505d-26b3-4449-b942-1292baaab870638372276872671862"
+            ],
+            "outputSocketIds": [],
+            "headerColor": 0
+        },
+        {
+            "id": "9683d06c-cc08-4a5b-89ae-7c62fcef0713",
+            "values": [
+                {
+                    "key": "message",
+                    "value": "This example for the \"Cucco Storm\" timed effect is probably the most complex example in this graph.  It represents a typical approach you can use to handle \"looping\" behaviours that should happen whenever a timed effect is active:\n\n1. in reaction to the \"Start\" trigger, start a timer and switch on a \"flag\" parameter\n\n2. in reaction to the timer, check the flag parameter. If the flag is on, do an cycle of the behaviour and set the timer for the next cycle\n\n3. in reaction to the \"Stop\" trigger, switch off the flag parameter.  The timer will stop repeating itself after the next cycle."
+                }
+            ],
+            "posX": 971.999755859375,
+            "posY": -769.67041015625,
+            "path": "Nodes/MessageBoxNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [],
+            "headerColor": 2
+        },
+        {
+            "id": "014f00a7-50a9-4d0b-824a-86492434e1c6",
+            "values": [
+                {
+                    "key": "message",
+                    "value": "Here's a very basic example of how to handle a Timed Effect -- in this case the \"Ice Physics\" effect -- by using VNyan's toggle-able actions:\n\n1. In reaction to the \"Start\" trigger, we toggle on an action\n\n2. In reaction to the \"Stop\" trigger, we toggle off that same action\n\nCare must be taken when you've got several trigers that toggle the same effect to avoid overlap and unexpected behaviour"
+                }
+            ],
+            "posX": -384.33367919921877,
+            "posY": -206.67047119140626,
+            "path": "Nodes/MessageBoxNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [],
+            "headerColor": 2
+        },
+        {
+            "id": "3de321b1-ee3b-440a-bb8b-96d29af97a8b",
+            "values": [
+                {
+                    "key": "message",
+                    "value": "There are all \"Instant\" effects that don't have a quantity.\n\nEach one has been set to drop a different item on the model."
+                }
+            ],
+            "posX": 1666.999755859375,
+            "posY": 258.66278076171877,
+            "path": "Nodes/MessageBoxNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [],
+            "headerColor": 2
+        },
+        {
+            "id": "0941bee8-40f4-46e3-a253-e2e27ad5a26a",
+            "values": [
+                {
+                    "key": "message",
+                    "value": "There are all \"Instant\" effects that have a quantity associated with them.\n\nEach one will throw a different item, the number of which will match the quantity related to the effect.\n\nSince test effects within the crowd Control effect managet don't always come through with a quantity, that could result in these effects not triggering in your own testing.  Use the CC Extension or Interaction link to properly test quantity-based effects. "
+                }
+            ],
+            "posX": -424.66693115234377,
+            "posY": 651.9961547851563,
+            "path": "Nodes/MessageBoxNode",
+            "inputSocketIds": [],
+            "outputSocketIds": [],
+            "headerColor": 2
+        }
+    ],
+    "connections": [
+        {
+            "id": "6a95bf11-436d-4032-a02b-fabcb504fe92",
+            "outputSocketId": "5e91980d-0324-42c1-9090-dcaa15e28a64638372247650189769",
+            "inputSocketId": "da240f1b-ba70-42bd-a06a-8ad51bcd956a638372250957058392"
+        },
+        {
+            "id": "70a08544-a3db-41c5-aff1-d6528ce8ec62",
+            "outputSocketId": "492689cd-142d-4f19-9004-cc6ecf5a0fa6638372247779605968",
+            "inputSocketId": "ba9402cb-7153-4192-b366-3e49d7c3760d638372253246815791"
+        },
+        {
+            "id": "24777ee5-9c4d-4195-801d-0eb4706f72c8",
+            "outputSocketId": "c21c0a41-f4eb-4770-a231-8b36f5cda5ff638372247763935270",
+            "inputSocketId": "f3dc22e7-66db-4d81-a713-22cdea62aadf638372253600705175"
+        },
+        {
+            "id": "cb1e22d6-2c28-4fd0-8072-5e2fda4d37ac",
+            "outputSocketId": "ac7b0fa7-b01c-458d-99ea-71af2ca731c6638372249054320558",
+            "inputSocketId": "59042ad2-f975-4746-a4f1-9c7b9d26ff7d638372253850495998"
+        },
+        {
+            "id": "fcc59d9c-1c25-45fe-a164-86ef7dea420f",
+            "outputSocketId": "28a31463-3023-4ea8-b419-00751bede9e1638372249145626649",
+            "inputSocketId": "b1f469f2-fb8d-4049-9887-2ffeae3622d7638372254273241209"
+        },
+        {
+            "id": "0072db3f-0953-4d10-8d78-c04c6b6550a7",
+            "outputSocketId": "8aa0e427-9cae-4a50-bd2a-97e8597ed49e638372249356497566",
+            "inputSocketId": "91c0ca38-efba-4208-9888-af426e13752c638372254677015639"
+        },
+        {
+            "id": "97129e49-eff4-4e22-ae53-000b5cc041dd",
+            "outputSocketId": "e6347c45-c795-48db-8b22-56ef7f0b0753638372250486937970",
+            "inputSocketId": "cf1a41da-e097-4898-891e-e817f55aa63b638372259878352434"
+        },
+        {
+            "id": "bcd0f9e5-5ee8-4e83-be6a-b46cfd8f3b69",
+            "outputSocketId": "33a916a7-ffbe-499c-9620-986f1611967b638372250498718010",
+            "inputSocketId": "183ae19f-18b3-424f-beca-a63eceeb00c4638372260293565120"
+        },
+        {
+            "id": "5c439343-0fd1-44ca-9bb8-f67fdfb18dcc",
+            "outputSocketId": "a909b92b-33e3-4e32-9ade-0195852cdea3638372259340282170",
+            "inputSocketId": "b0228664-8639-4ce2-9f2a-30ba43567ff6638372261205118195"
+        },
+        {
+            "id": "dcaee382-8288-45a2-ab8e-ff382be6272b",
+            "outputSocketId": "2a6e6166-ac4e-4434-a012-50360970bb6c638372261205118195",
+            "inputSocketId": "0f37407b-97c1-4b18-93c8-30fe0b84011a638372261710838381"
+        },
+        {
+            "id": "27333f22-c963-48f9-b691-0dd33805d84c",
+            "outputSocketId": "1c0f8046-cf98-4bd9-bca9-f758aebeeafa638372261710838381",
+            "inputSocketId": "3a16ee3f-34ac-4689-9a6e-efbdfc50a307638372261875810419"
+        },
+        {
+            "id": "2306bc48-0c79-4910-8c8b-5d10ab88461d",
+            "outputSocketId": "c398efd5-5222-4eb6-aca3-a4a98e995473638372261710838381",
+            "inputSocketId": "20a1a5a8-99dd-4e0b-96c9-ed4ca9d8407c638372261972202560"
+        },
+        {
+            "id": "188a0359-88e1-4b48-b9f9-506d2f6cd0a0",
+            "outputSocketId": "21e5b3a5-9f6f-42e9-8473-c9ba0d60e19b638372248373410001",
+            "inputSocketId": "d85bbfff-7fea-480b-8512-e3d9a66fb79f638372276756291429"
+        },
+        {
+            "id": "3da4c634-cf4d-49cb-a3ca-9d92974ab9c9",
+            "outputSocketId": "7f45f9bc-a476-4689-ad37-9ad74c333caf638372248384857005",
+            "inputSocketId": "db56505d-26b3-4449-b942-1292baaab870638372276872671862"
+        },
+        {
+            "id": "402e9714-e28f-4921-90be-aec1f209f7d2",
+            "outputSocketId": "2a6e6166-ac4e-4434-a012-50360970bb6c638372261205118195",
+            "inputSocketId": "fe18814d-7b3d-43c7-9a92-044f03abd9f0638372262935197580"
+        },
+        {
+            "id": "4f9352a2-9187-4087-ab8e-75850c05aa98",
+            "outputSocketId": "e6347c45-c795-48db-8b22-56ef7f0b0753638372250486937970",
+            "inputSocketId": "fe18814d-7b3d-43c7-9a92-044f03abd9f0638372262935197580"
+        }
+    ]
+}
