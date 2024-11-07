@@ -335,7 +335,7 @@ namespace CrowdControlVNyanPlugin
         {
             plugin.mainThread.Enqueue(() => {
                 _VNyanHelper.setVNyanParameterString("_xcc_trigger", $"_xcc_{code}_{effectID}{suffix}");
-                _VNyanHelper.callTrigger($"_xcc_{code}_{effectID}{suffix}");
+                _VNyanHelper.callTrigger($"_xcc_{code}_{effectID}{suffix}", 0, 0, 0, "", "", "");
                 triggerHistory.Add(new TriggerHistoryRecord
                 {
                     timestamp = System.DateTime.Now.ToString("hh:mm:ss"),

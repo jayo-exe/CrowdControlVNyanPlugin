@@ -13,7 +13,7 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
         private Dictionary<string, string> VNyanStringParameters = new Dictionary<string, string>();
         private Dictionary<string, float> VNyanFloatParameters = new Dictionary<string, float>();
         private Dictionary<string, Dictionary<string,string>> VNyanDictionaries = new Dictionary<string, Dictionary<string, string>>();
-
+        private GameObject harnessObject;
         private void Awake()
         {
             if (_instance != null && _instance != this)
@@ -23,6 +23,7 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
             else
             {
                 _instance = this;
+                harnessObject = gameObject;
                 DontDestroyOnLoad(gameObject);
             }
         }
@@ -30,7 +31,7 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
         public void setVNyanParameterString(string parameterName, string value)
         {
 
-            VNyanTestHarness testHarness = GameObject.FindObjectOfType<VNyanTestHarness>();
+            VNyanTestHarness testHarness = harnessObject.GetComponent<VNyanTestHarness>();
             VNyanStringParameters[parameterName] = value;
             testHarness.setStringParameter(parameterName, value);
             testHarness.refreshParameterDisplay();
@@ -49,7 +50,7 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
 
         public void setVNyanParameterFloat(string parameterName, float value)
         {
-            VNyanTestHarness testHarness = GameObject.FindObjectOfType<VNyanTestHarness>();
+            VNyanTestHarness testHarness = harnessObject.GetComponent<VNyanTestHarness>();
             VNyanFloatParameters[parameterName] = value;
             testHarness.setFloatParameter(parameterName, value);
             testHarness.refreshParameterDisplay();

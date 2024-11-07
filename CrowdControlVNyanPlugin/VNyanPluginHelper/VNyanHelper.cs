@@ -13,6 +13,7 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
         private VNyanTestHarness testHarness;
         private GameObject testCanvasObject;
         private VNyanTestParameter parameterSystem;
+        MainThreadDispatcher mainThread;
         public bool inVNyan { get; }
 
         public VNyanHelper()
@@ -171,7 +172,6 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
 
         }
 
-        /*
         public string getVNyanDictionaryValue(string dictionaryName, string keyName)
         {
             //Debug.Log($"Getting Value { keyName } from Dictionary { dictionaryName }");
@@ -200,7 +200,6 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
                 VNyanInterface.VNyanInterface.VNyanParameter.clearVNyanDictionary(dictionaryName);
             }
         }
-        */
 
         public GameObject getAvatarObject()
         {
@@ -219,12 +218,12 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
             }
         }
 
-        public void callTrigger(string triggerName)
+        public void callTrigger(string triggerName, int value1, int value2, int value3, string text1, string text2, string text3)
         {
             //Debug.Log($"Trigger called: {triggerName}");
             if (!(VNyanInterface.VNyanInterface.VNyanTrigger == null))
             {
-                VNyanInterface.VNyanInterface.VNyanTrigger.callTrigger(triggerName);
+                VNyanInterface.VNyanInterface.VNyanTrigger.callTrigger(triggerName, value1, value2, value3, text1, text2, text3);
             }
         }
 

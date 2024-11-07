@@ -23,7 +23,7 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
     class VNyanTestTrigger: MonoBehaviour, ITriggerInterface
     {
         private VNyanTestTrigger _instance;
-        private Action<string> triggerFired;
+        private Action<string, int, int, int, string, string, string> triggerFired;
         private Queue<VNyanTestTriggerData> triggerQueue = new Queue<VNyanTestTriggerData>();
 
         public void registerTriggerListener(ITriggerHandler triggerHandler)
@@ -31,7 +31,7 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
             triggerFired += triggerHandler.triggerCalled;
         }
 
-        public void callTrigger(string triggerName)
+        public void callTrigger(string triggerName, int value1, int value2, int value3, string text1, string text2, string text3)
         {
             Debug.Log($"Enqueueing trigger {triggerName}");
             if (_instance == null)
@@ -44,12 +44,12 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
                 VNyanTestTriggerData trigger = new VNyanTestTriggerData
                 {
                     triggerName = triggerName,
-                    value1 = 0,
-                    value2 = 0,
-                    value3 = 0,
-                    text1 = "",
-                    text2 = "",
-                    text3 = ""
+                    value1 = value1,
+                    value2 = value2,
+                    value3 = value3,
+                    text1 = text1,
+                    text2 = text2,
+                    text3 = text3
                 };
                 triggerQueue.Enqueue(trigger);
             }
@@ -70,16 +70,21 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
 
         private void Update()
         {
-            
-            if (_instance == null) return;
-            
+            if (_instance == null)
+            {
+                return;
+            }
+            if(triggerFired == null) 
+            { 
+                return;
+            }
 
             lock (triggerQueue)
             {
                 while (triggerQueue.Count > 0)
                 {
                     VNyanTestTriggerData trigger = triggerQueue.Dequeue();
-                    if (triggerFired != null) triggerFired.Invoke(trigger.triggerName);
+                    triggerFired.Invoke(trigger.triggerName, trigger.value1, trigger.value2, trigger.value3, trigger.text1, trigger.text2, trigger.text3);
                 }
             }
         }

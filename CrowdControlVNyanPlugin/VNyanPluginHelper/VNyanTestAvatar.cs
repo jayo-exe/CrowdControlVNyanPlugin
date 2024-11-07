@@ -36,6 +36,12 @@ namespace CrowdControlVNyanPlugin.VNyanPluginHelper
             blendshapeOverrides.Remove(name);
         }
 
+        public void registerBlendshapeProcessingListener(IBlendshapeProcessingListener listener)
+        {
+            // For the time being, this will go unimplemented, as I can't come up with a way
+            // to approximate the work being done by the real system
+        }
+
         public void registerPoseLayer(IPoseLayer layer)
         {
             poseLayers.Add(layer);

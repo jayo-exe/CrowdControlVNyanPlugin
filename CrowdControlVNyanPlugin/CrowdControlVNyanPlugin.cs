@@ -35,8 +35,13 @@ namespace CrowdControlVNyanPlugin
         public MainThreadDispatcher mainThread;
 
         private VNyanHelper _VNyanHelper;
+        private VNyanPluginUpdater updater;
         private CrowdControlManager crowdControlManager;
-        
+
+        private string currentVersion = "v0.3.0";
+        private string repoName = "jayo-exe/CrowdControlVNyanPlugin";
+        private string updateLink = "https://jayo-exe.itch.io/crowd-control-plugin-for-vnyan";
+
 
         public void Start()
         {
@@ -47,10 +52,15 @@ namespace CrowdControlVNyanPlugin
             
             Debug.Log($"[CrowdControlPlugin] Crowd Control Plugin is Awake!");
             _VNyanHelper = new VNyanHelper();
+
+            updater = new VNyanPluginUpdater(repoName, currentVersion, updateLink);
+            updater.OpenUrlRequested += (url) => mainThread.Enqueue(() => { Application.OpenURL(url); });
+
             ccToken = "";
             Debug.Log($"[CrowdControlPlugin] Loading Settings");
             // Load settings
             loadPluginSettings();
+            updater.CheckForUpdates();
 
             Debug.Log($"[CrowdControlPlugin] Beginning Plugin Setup");
             
@@ -67,6 +77,12 @@ namespace CrowdControlVNyanPlugin
             // Hide the window by default
             if (window != null)
             {
+
+                updater.PrepareUpdateUI(
+                    window.transform.Find("Panel/VersionText").gameObject,
+                    window.transform.Find("Panel/UpdateText").gameObject,
+                    window.transform.Find("Panel/UpdateButton").gameObject
+                );
 
                 GameObject displayScreen = window.transform.Find("Panel/SessionDetails/GameImage").gameObject;
                 displayScreenRenderer = displayScreen.GetComponent<RawImage>();
