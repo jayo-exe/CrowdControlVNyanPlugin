@@ -1,17 +1,22 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace CrowdControlVNyanPlugin.VNyanPluginHelper
 {
-    class WindowFocus : MonoBehaviour, IPointerDownHandler
+    class WindowDrag : MonoBehaviour, IDragHandler, IPointerDownHandler
     {
-        public RectTransform focusRect;
+        public RectTransform dragRect;
+
+        public void OnDrag(PointerEventData eventData)
+        {
+            dragRect.anchoredPosition += eventData.delta;
+        }
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            focusRect.SetAsLastSibling();
+            dragRect.SetAsLastSibling();
             transform.SetAsLastSibling();
         }
     }
+    
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using CrowdControlVNyanPlugin.CrowdControl.TRPC.Entities;
 using CrowdControlVNyanPlugin.VNyanPluginHelper;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace CrowdControlVNyanPlugin
 {
@@ -34,11 +35,10 @@ namespace CrowdControlVNyanPlugin
         public string ccToken;
         public MainThreadDispatcher mainThread;
 
-        private VNyanHelper _VNyanHelper;
         private VNyanPluginUpdater updater;
         private CrowdControlManager crowdControlManager;
 
-        private string currentVersion = "v0.3.0";
+        private string currentVersion = "v0.4.0";
         private string repoName = "jayo-exe/CrowdControlVNyanPlugin";
         private string updateLink = "https://jayo-exe.itch.io/crowd-control-plugin-for-vnyan";
 
@@ -51,10 +51,9 @@ namespace CrowdControlVNyanPlugin
         {
             
             Debug.Log($"[CrowdControlPlugin] Crowd Control Plugin is Awake!");
-            _VNyanHelper = new VNyanHelper();
 
             updater = new VNyanPluginUpdater(repoName, currentVersion, updateLink);
-            updater.OpenUrlRequested += (url) => mainThread.Enqueue(() => { Application.OpenURL(url); });
+            updater.OpenUrlRequested += (url) => MainThreadDispatcher.Enqueue(() => { Application.OpenURL(url); });
 
             ccToken = "";
             Debug.Log($"[CrowdControlPlugin] Loading Settings");
@@ -68,7 +67,8 @@ namespace CrowdControlVNyanPlugin
             
             try
             {
-                window = _VNyanHelper.pluginSetup(this, "Crowd Control", windowPrefab);
+                VNyanInterface.VNyanInterface.VNyanUI.registerPluginButton("Crowd Control", this);
+                window = (GameObject)VNyanInterface.VNyanInterface.VNyanUI.instantiateUIPrefab(windowPrefab);
             } catch(Exception e)
             {
                 Debug.Log(e.ToString());
@@ -169,7 +169,7 @@ namespace CrowdControlVNyanPlugin
 
         public void initCrowdControl()
         {
-            mainThread.Enqueue(() => {
+            MainThreadDispatcher.Enqueue(() => {
                 window.transform.Find("Panel/StatusControls/AuthorizeButton").gameObject.SetActive(false);
                 window.transform.Find("Panel/StatusControls/DeauthorizeButton").gameObject.SetActive(true);
                 crowdControlManager.initCrowdControl();
@@ -178,7 +178,7 @@ namespace CrowdControlVNyanPlugin
 
         public void deInitCrowdControl()
         {
-            mainThread.Enqueue(() => {
+            MainThreadDispatcher.Enqueue(() => {
                 window.transform.Find("Panel/StatusControls/AuthorizeButton").gameObject.SetActive(true);
                 window.transform.Find("Panel/StatusControls/DeauthorizeButton").gameObject.SetActive(false);
                 crowdControlManager.deInitCrowdControl();
@@ -199,7 +199,7 @@ namespace CrowdControlVNyanPlugin
         public void loadPluginSettings()
         {
             // Get settings in dictionary
-            Dictionary<string, string> settings = _VNyanHelper.loadPluginSettingsData("CrowdControlPlugin.cfg");
+            Dictionary<string, string> settings = VNyanInterface.VNyanInterface.VNyanSettings.loadSettings("CrowdControlPlugin.cfg");
             if (settings != null)
             {
                 // Read string value
@@ -216,7 +216,7 @@ namespace CrowdControlVNyanPlugin
             Dictionary<string, string> settings = new Dictionary<string, string>();
             settings["CCToken"] = ccToken;
 
-            _VNyanHelper.savePluginSettingsData("CrowdControlPlugin.cfg", settings);
+            VNyanInterface.VNyanInterface.VNyanSettings.saveSettings("CrowdControlPlugin.cfg", settings);
         }
 
         public void pluginButtonClicked()
