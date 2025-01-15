@@ -16,11 +16,9 @@ A VNyan Plugin that allows you to connect to an active [Crowd Control](https://c
 
 ## Installation
 1. Grab the ZIP file from the [latest release](https://github.com/jayo-exe/CrowdControlVNyanPlugin/releases/latest) of the plugin.
-2. Extract the contents of the ZIP file _directly into your VNyan installation folder_.  This will add the plugin files to yor VNyan `Items\Objects` and `Item\Assemblies` folders.
-3. Launch VNyan, open your Node Graphs, and add a `Spawn CObject` Node attached to an `Application Start` Node.  Ensure that this node is set to spawn the `JayoCrowdControlPlugin` Object, and that "Destroy after Seconds" is set to `-1`
-4. Open the VNyan Settings window, go to the "Misc" section, and ensure that **Allow 3rd Party Mods/Plugins** is enabled. This is required for this plugin  (or any plugin) to function correctly, so if you've already got other plugins installed you can probably skip this step.
-5. Save your Node Graph and restart VNyan to allow the plugin and libraries to be loaded
-6. One VNyan loads, confirm that a button for the plugin now exists in your Plugins window!
+2. Extract the contents of the ZIP file _directly into your VNyan installation folder_.  This will add the plugin files to your VNyan `Item\Assemblies` folder.
+3. Open the VNyan Settings window, go to the "Misc" section, and ensure that **Allow 3rd Party Mods/Plugins** is enabled. This is required for this plugin  (or any plugin) to function correctly, so if you've already got other plugins installed you can probably skip this step. Restart VNyan if you needed to enable this in order for it to take effect.
+6. Once VNyan loads, confirm that a button for the plugin now exists in your Plugins window!
 
 ## Usage
 ### Authorizing Crowd Control
